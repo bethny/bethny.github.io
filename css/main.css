@@ -29,6 +29,13 @@ h1 {
     font-size: 3em;
     font-family: 'Muli', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 3px;
+}
+h2 {
+    font-size: 2em;
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 p {
     /*font-size: 1.5em;*/
