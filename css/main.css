@@ -16,9 +16,14 @@ a {
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
     color: #999;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 a:hover {
-    text-decoration: underline;
+    color: deepskyblue;
 }
 h1 {
     font-size: 3em;
@@ -35,7 +40,7 @@ p {
 }
 footer {
     /*border-top: 1px solid #d5d5d5;*/
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 ul.posts { 
