@@ -6,7 +6,7 @@ nav ul, footer ul {
     font-family: 'Karla', sans-serif;
     padding: 0px;
     list-style: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 nav ul li, footer ul li {
     display: inline;
@@ -33,7 +33,7 @@ p {
 }
 footer {
     /*border-top: 1px solid #d5d5d5;*/
-    font-size: .8em;
+    font-size: .8;
 }
 
 ul.posts { 
