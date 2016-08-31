@@ -43,20 +43,20 @@ a {
 a:hover {
   color: #45966e; }
 
-title {
+h1 {
   font-size: 3em;
   font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center; }
 
-h1 {
+h2 {
   font-size: 1.5em;
   font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 3px; }
 
-h2 a {
+h3 a {
   font-size: 1.5em;
   font-family: Josefin Slab, serif;
   text-transform: uppercase;
@@ -67,7 +67,7 @@ h2 a {
   -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s; }
-h2 a:hover {
+h3 a:hover {
   color: #45966e; }
 
 p {
