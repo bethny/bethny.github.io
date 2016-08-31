@@ -1,3 +1,9 @@
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
 body {
   background: #ffffff;
   margin: 60px auto;
@@ -18,17 +24,18 @@ nav ul, footer ul {
   font-weight: bold; }
   nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px; }
+    margin-left: 10px;
+    margin-right: 10px; }
 
 nav2 ul {
-  float: right;
   top: 0%;
   font-family: Work Sans, sans-serif;
   padding: 0px;
   list-style: none; }
   nav2 ul li {
     display: inline;
-    margin-right: 20px; }
+    margin-left: 10px;
+    margin-right: 10px; }
 
 a {
   text-decoration: none;
@@ -50,7 +57,7 @@ h1 {
   letter-spacing: 5px;
   text-align: center; }
 
-h2 {
+h2 a {
   font-size: 1.5em;
   font-family: Josefin Slab, serif;
   text-transform: uppercase;
