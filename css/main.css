@@ -14,7 +14,7 @@ nav ul li, footer ul li {
 }
 nav2 ul {
     position: absolute;
-    right: 0px;
+    right: 30px;
     font-family: 'Karla', sans-serif;
     padding: 0px;
     list-style: none;
