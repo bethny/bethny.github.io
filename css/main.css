@@ -1,7 +1,14 @@
 body {
-  background: #afc9d2;
+  background: #ffffff;
   margin: 60px auto;
-  width: 70%; }
+  width: 70%;
+  text-align: justify;
+  line-height: 150%; }
+
+img {
+  opacity: 1;
+  border: none;
+  text-decoration: none; }
 
 nav ul, footer ul {
   font-family: Work Sans, sans-serif;
@@ -25,7 +32,7 @@ nav2 ul {
 a {
   text-decoration: none;
   font-family: Work Sans, sans-serif;
-  color: #808080;
+  color: #afc9d2;
   -o-transition: .5s;
   -ms-transition: .5s;
   -moz-transition: .5s;
@@ -37,16 +44,16 @@ a:hover {
 
 h1 {
   font-size: 3em;
-  font-family: Kreon, serif;
+  font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 3px; }
 
 h2 a {
   font-size: 2em;
-  font-family: Kreon, serif;
+  font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #808080;
+  color: #afc9d2;
   -o-transition: .5s;
   -ms-transition: .5s;
   -moz-transition: .5s;
@@ -77,14 +84,14 @@ ul posts {
   height: 5px;
   width: 8px;
   -webkit-border-radius: 0px;
-  background-color: #afc9d2; }
+  background-color: #ffffff; }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #afc9d2;
+  background-color: #ffffff;
   border-left: 1px solid #45966e; }
 
 ::-webkit-scrollbar-track {
-  background-color: #afc9d2;
+  background-color: #ffffff;
   border-left: 1px solid #45966e; }
 
 /*# sourceMappingURL=stylesheet.css.map */
