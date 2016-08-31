@@ -1,9 +1,34 @@
+/*default variables*/ 
+<meta name="color:Background" content="#afc9d2"/>
+<meta name="color:Text" content="#7d7d7d"/>
+<meta name="color:Link" content="#7d7d7d"/>
+<meta name="color:Title"content="#000000"/>
+<meta name="color:Scrollbar" content="#45966e" />
+<meta name="color:Borders" content="#45966e"/>
+
+/*defining new fonts*/
 @font-face {
     font-family: GTWalsheim
     src: url('fonts/GT-Walsheim-Pro-Trial-Regular.otf')
 }
 
+::-webkit-scrollbar{
+    height:5px;
+    width:8px; 
+    -webkit-border-radius: 0px;
+    background-color:{color:background};
+}
+::-webkit-scrollbar-thumb{
+    background-color:{color:background};
+    border-left:1px solid {color:scrollbar};
+}
+::-webkit-scrollbar-track{
+    background-color:{color:background};
+    border-left:1px solid {color:scrollbar};
+}
+
 body {
+    background-color:{color:background};
     margin: 60px auto;
     width: 70%;
 }
@@ -19,7 +44,7 @@ nav ul li, footer ul li {
 }
 nav2 ul {
     float: right;
-    top: 0%;
+    top: 60px;
     font-family: 'Karla', sans-serif;
     padding: 0px;
     list-style: none;
@@ -43,13 +68,13 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family: 'GTWalsheim';
+    font-family: 'Arvo', serif;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 h2 {
     font-size: 2em;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Arvo', serif;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
