@@ -21,7 +21,7 @@ nav ul, footer ul {
 
 nav2 ul {
   float: right;
-  top: 30px;
+  top: 0%;
   font-family: Work Sans, sans-serif;
   padding: 0px;
   list-style: none; }
@@ -42,14 +42,20 @@ a {
 a:hover {
   color: #45966e; }
 
-h1 {
+title {
   font-size: 3em;
+  font-family: Josefin Slab, serif;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+
+h1 {
+  font-size: 1.5em;
   font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 3px; }
 
 h2 a {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -63,11 +69,9 @@ h2 a:hover {
   color: #45966e; }
 
 p {
-  /*font-size: 1.5em;*/
-  font-size: 15px;
+  font-size: 14px;
   font-family: Work Sans, sans-serif;
-  /*line-height: 1.4em;*/
-  line-height: 20px;
+  line-height: 21px;
   color: #525252; }
 
 footer {
@@ -76,7 +80,7 @@ footer {
 
 ul posts {
   margin: 20px auto 40px;
-  font-size: 1.5em; }
+  font-size: 14px; }
   ul posts li {
     list-style: none; }
 
