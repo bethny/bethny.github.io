@@ -130,6 +130,7 @@ ul posts {
     display: inline;
     font-family: "Work Sans", sans-serif;
     padding: 0px;
+    margin-right: 0px;
     margin-left: 20px; }
 
 .text-content {
