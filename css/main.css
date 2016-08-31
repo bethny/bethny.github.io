@@ -1,6 +1,6 @@
 @font-face {
     font-family: GTWalsheim
-    src: url('https://github.com/bethanyhung/bethanyhung.github.io/tree/master/fonts/GT-Walsheim-Pro-Trial-Regular.otf')
+    src: url('fonts/GT-Walsheim-Pro-Trial-Regular.otf')
 }
 
 body {
@@ -19,7 +19,7 @@ nav ul li, footer ul li {
 }
 nav2 ul {
     float: right;
-    /*top: 0%;*/
+    top: 0%;
     font-family: 'Karla', sans-serif;
     padding: 0px;
     list-style: none;
