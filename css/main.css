@@ -12,6 +12,17 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+nav2 ul {
+    position: absolute;
+    right: 0px;
+    font-family: 'Karla', sans-serif;
+    padding: 0px;
+    list-style: none;
+}
+nav2 ul li {
+    display: inline;
+    margin-right: 20px;
+}
 a {
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
