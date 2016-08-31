@@ -4,6 +4,18 @@
 .alignright {
   float: right; }
 
+.collapsibleList li > input + * {
+  display: none; }
+
+.collapsibleList li > input:checked + * {
+  display: block; }
+
+.collapsibleList li > input {
+  display: none; }
+
+.collapsibleList label {
+  cursor: pointer; }
+
 body {
   background: #ffffff;
   margin: 60px auto;
