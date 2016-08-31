@@ -1,9 +1,5 @@
-/* ------------------------*/
-/* ---------->>> GLOBAL VARIABLES <<<-----------*/
-/* ------------------------*/
-/* ------------------------*/
-/* ---------->>> EXTENDERS <<<-----------*/
-/* ------------------------*/
+/* VARIABLES */
+/* EXTENDERS */
 footer ul, nav ul {
   text-align: center;
   font-family: "Work Sans", sans-serif;
@@ -16,9 +12,8 @@ footer ul, nav ul {
     margin-right: 10px;
     list-style: none; }
 
-/* ------------------------*/
-/* ---------->>> GLOBAL PROPERTIES <<<-----------*/
-/* ------------------------*/
+/* MIX-INS */
+/* PROPERTIES */
 a {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
@@ -59,20 +54,6 @@ h2 {
     font-family: "Josefin Slab", serif;
     text-transform: uppercase;
     letter-spacing: 3px; }
-
-h3 a {
-  font-size: 1.3em;
-  font-family: "Josefin Slab", serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #88b8c9;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s; }
-  h3 a:hover {
-    color: #45966e; }
 
 img {
   height: auto;
@@ -140,11 +121,15 @@ ul posts {
 
 .pagelet ul {
   top: 0%;
+  list-style: none;
+  display: inline;
   font-family: "Work Sans", sans-serif;
-  padding: 0px;
-  list-style: none; }
+  padding: 0px; }
   .pagelet ul li {
+    list-style: none;
     display: inline;
+    font-family: "Work Sans", sans-serif;
+    padding: 0px;
     margin-left: 20px; }
 
 .text-content {
