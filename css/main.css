@@ -51,25 +51,25 @@ a:hover {
 
 h1 {
   font-size: 3em;
-  font-family: Roboto Slab, serif;
+  font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center; }
 
 h2 {
   font-size: 1.3em;
-  font-family: Roboto Slab, serif;
+  font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 3px; }
   h2 a {
     font-size: 1.3em;
-    font-family: Roboto Slab, serif;
+    font-family: Josefin Slab, serif;
     text-transform: uppercase;
     letter-spacing: 3px; }
 
 h3 a {
   font-size: 1.3em;
-  font-family: Roboto Slab, serif;
+  font-family: Josefin Slab, serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #88b8c9;
