@@ -3,14 +3,9 @@
 footer ul, nav ul {
   text-align: center;
   font-family: "Work Sans", sans-serif;
-  padding: 0px;
-  list-style: none;
-  font-weight: bold; }
+  padding: 0px; }
   footer ul li, nav ul li {
-    display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
-    list-style: none; }
+    display: inline; }
 
 /* MIX-INS */
 /* PROPERTIES */
@@ -35,7 +30,11 @@ body {
 
 footer {
   /*border-top: 1px solid #d5d5d5;*/
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 h1 {
   font-size: 3em;
@@ -64,6 +63,12 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto; }
+
+nav {
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 span {
   display: table-cell;
@@ -122,14 +127,10 @@ ul posts {
 .pagelet ul {
   top: 0%;
   list-style: none;
-  display: inline;
-  font-family: "Work Sans", sans-serif;
-  padding: 0px; }
+  display: inline; }
   .pagelet ul li {
     list-style: none;
     display: inline;
-    font-family: "Work Sans", sans-serif;
-    padding: 0px;
     margin-right: 0px;
     margin-left: 20px; }
 
