@@ -34,8 +34,7 @@ nav2 ul {
   list-style: none; }
   nav2 ul li {
     display: inline;
-    margin-left: 10px;
-    margin-right: 10px; }
+    margin-left: 20px; }
 
 a {
   text-decoration: none;
