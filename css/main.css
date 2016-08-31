@@ -16,6 +16,28 @@
 .collapsibleList label {
   cursor: pointer; }
 
+.imgHoverable {
+  max-width: 30%;
+  height: auto;
+  display: block; }
+
+.text-content {
+  font-color: #45966e;
+  font-family: Work Sans, sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px; }
+
+span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
 body {
   background: #ffffff;
   margin: 60px auto;
@@ -31,7 +53,7 @@ img {
   text-decoration: none;
   display: block;
   margin-top: 30px;
-  margine-bottom: 30px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto; }
 
