@@ -1,13 +1,5 @@
 /* VARIABLES */
-/* EXTENDERS */
-footer ul, nav ul {
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-  padding: 0px; }
-  footer ul li, nav ul li {
-    display: inline; }
-
-/* MIX-INS */
+/* MIXINS */
 /* PROPERTIES */
 a {
   text-decoration: none;
@@ -28,20 +20,22 @@ body {
   text-align: justify;
   line-height: 150%; }
 
-footer {
-  /*border-top: 1px solid #d5d5d5;*/
-  font-size: 1.3em;
+footer ul {
   list-style: none;
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px; }
+  font-size: 1.3em; }
+  footer ul li {
+    display: inline;
+    margin-left: 30px;
+    margin-right: 30px; }
 
 h1 {
   font-size: 3em;
   font-family: "Josefin Slab", serif;
   text-transform: uppercase;
   letter-spacing: 5px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 h2 {
   font-size: 1.3em;
@@ -64,11 +58,11 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
-nav {
+nav ul {
   list-style: none;
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px; }
+  font-size: 1.3em; }
+  nav ul li {
+    display: inline; }
 
 span {
   display: table-cell;
@@ -87,9 +81,29 @@ ul posts {
   ul posts li {
     list-style: none; }
 
-/* ------------------------*/
-/* ---------->>> CLASSES <<<-----------*/
-/* ------------------------*/
+/* IDs */
+#links-home {
+  text-align: center; }
+  #links-home ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.3em;
+    font-weight: bold; }
+
+#links-pagelet ul {
+  top: 0%; }
+  #links-pagelet ul li {
+    margin-right: 0px;
+    margin-left: 20px; }
+
+#links-social {
+  text-align: center; }
+  #links-social ul li {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.3em; }
+
+/* CLASSES */
 .alignleft {
   float: left; }
 
@@ -124,15 +138,10 @@ ul posts {
 .img-large {
   max-width: 70%; }
 
-.pagelet ul {
-  top: 0%;
-  list-style: none;
-  display: inline; }
-  .pagelet ul li {
-    list-style: none;
-    display: inline;
-    margin-right: 0px;
-    margin-left: 20px; }
+.static-border {
+  border-style: solid;
+  border-color: #88b8c9;
+  border-width: 10px; }
 
 .text-content {
   font-color: #45966e;
@@ -164,4 +173,4 @@ ul posts {
   background-color: #ffffff;
   border-left: 1px solid #45966e; }
 
-/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=stylesheet_a.css.map */
