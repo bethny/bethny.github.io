@@ -21,7 +21,7 @@ body {
   line-height: 150%; }
 
 footer ul {
-  text-align: center;
+  margin: auto;
   list-style: none;
   font-size: 1.3em; }
   footer ul li {
@@ -60,7 +60,8 @@ img {
   margin-right: auto; }
 
 nav ul {
-  /* MOVE THIS DOWN TO ID */ }
+  list-style: none;
+  font-size: 14px; }
   nav ul li {
     display: inline; }
 
@@ -82,20 +83,15 @@ ul posts {
     list-style: none; }
 
 /* IDs */
-#links-home {
-  text-align: center; }
-  #links-home ul {
-    list-style: none;
-    font-size: 1.3em;
-    font-style: italic; }
-    #links-home ul li {
-      margin-left: 10px;
-      margin-right: 10px; }
+#links-home ul {
+  font-style: italic;
+  margin: auto; }
+  #links-home ul li {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 #links-pagelet ul {
-  top: 0%;
-  list-style: none;
-  font-size: 1.3em; }
+  top: 0%; }
   #links-pagelet ul li {
     margin-right: 0px;
     margin-left: 20px; }
