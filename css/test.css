@@ -11,7 +11,7 @@
 
 a {
   text-decoration: none;
-  font-family: "Apercu_Mono", sans-serif;
+  font-family: "Apercu_Mono";
   color: #0a648a;
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -24,8 +24,8 @@ a {
 body {
   background-image: url("/imgs/old_mathematics.png");
   background-repeat: repeat;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   text-align: justify;
   line-height: 150%; }
 
@@ -40,7 +40,7 @@ footer ul {
 
 h1 {
   font-size: 3em;
-  font-family: "Apercu_Mono", serif;
+  font-family: "Apercu_Mono";
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: left;
@@ -49,12 +49,12 @@ h1 {
 
 h2 {
   font-size: 1.3em;
-  font-family: "Apercu_Mono", serif;
+  font-family: "Apercu_Mono";
   text-transform: uppercase;
   letter-spacing: 3px; }
   h2 a {
     font-size: 1.3em;
-    font-family: "Apercu_Mono", serif;
+    font-family: "Apercu_Mono";
     text-transform: uppercase;
     letter-spacing: 3px; }
 
@@ -65,9 +65,12 @@ img {
   display: block; }
 
 nav ul {
+  font-family: "Apercu_Mono";
   list-style: none;
   font-size: 14px; }
   nav ul li {
+    margin-left: 20px;
+    margin-right: 0px;
     display: inline; }
 
 span {
@@ -77,7 +80,7 @@ span {
 
 p {
   font-size: 14px;
-  font-family: "Utopia", sans-serif;
+  font-family: "Utopia";
   line-height: 21px;
   color: #525252; }
 
@@ -88,21 +91,12 @@ ul posts {
     list-style: none; }
 
 /* IDs */
-#links-home ul {
-  font-style: italic;
-  margin: auto; }
-  #links-home ul li {
-    margin-left: 10px;
-    margin-right: 10px; }
-
-#links-pagelet ul {
-  top: 0%; }
-  #links-pagelet ul li {
-    margin-right: 0px;
-    margin-left: 20px; }
-
 #p-home p {
   margin: 200px 100px 10px 300px; }
+
+#div-home-btm div {
+    background-color: #0a648a;
+    margin: 0px 0px 0px 0px;}
 
 /* CLASSES */
 .alignleft {
@@ -144,7 +138,7 @@ ul posts {
 
 .text-content {
   font-color: #45966e;
-  font-family: "Apercu_Mono", sans-serif;
+  font-family: "Utopia";
   font-size: 1.3em;
   cursor: pointer;
   display: table;
