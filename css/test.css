@@ -41,9 +41,8 @@ footer ul {
     margin-right: 30px; }
 
 h1 {
-  font-size: 3em;
+  font-size: 36px;
   font-family: "Apercu_Mono";
-  text-transform: uppercase;
   letter-spacing: 5px;
   text-align: left;
   margin-top: 20px;
@@ -56,7 +55,6 @@ h2 {
   h2 a {
     font-size: 1.3em;
     font-family: "Apercu_Mono";
-    text-transform: uppercase;
     letter-spacing: 3px; }
 
 img {
@@ -68,7 +66,7 @@ img {
 nav {
     font-family: "Apercu_Mono";
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px; }
 
@@ -128,7 +126,7 @@ ul posts {
 .imgCornerLogo {
   height: 50px;
   width: 50px; 
-  margin: 10px 10px 10px 10px; }
+  margin: 20px 20px 20px 20px; }
 
 .img-small {
   max-width: 20%; }
