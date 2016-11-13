@@ -16,8 +16,8 @@ a {
 body {
   background-image: url("imgs/old_mathematics_@2X.png");
   background-repeat: repeat;
-  margin: 20px auto;
-  width: 100%;
+  width: 90%;
+  height: 90%;
   text-align: justify;
   line-height: 150%; }
 
@@ -94,7 +94,7 @@ ul posts {
     margin-left: 20px; }
 
 #p-home p {
-  margin: 100px 50px auto 300px; }
+  margin: 200px 100px 10px 300px; }
 
 /* CLASSES */
 .alignleft {
