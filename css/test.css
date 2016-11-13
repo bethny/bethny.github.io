@@ -15,8 +15,9 @@ a {
 
 body {
   background-image: url("imgs/old_mathematics_@2X.png");
-  margin: 60px auto;
-  width: 70%;
+  background-repeat: repeat;
+  margin: 20px auto;
+  width: 80%;
   text-align: justify;
   line-height: 150%; }
 
