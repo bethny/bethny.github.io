@@ -1,0 +1,168 @@
+/* VARIABLES */
+/* MIXINS */
+/* PROPERTIES */
+a {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  color: #0a648a;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s; }
+  a:hover {
+    color: #4ebbe1; }
+
+body {
+  background-image: url('imgs/old_mathematics_@2X.png');
+  background-repeat: repeat-y;
+  margin: 60px auto;
+  width: 70%;
+  text-align: justify;
+  line-height: 150%; }
+
+footer ul {
+  margin: auto;
+  list-style: none;
+  font-size: 1.3em; }
+  footer ul li {
+    display: inline;
+    margin-left: 30px;
+    margin-right: 30px; }
+
+h1 {
+  font-size: 3em;
+  font-family: "Josefin Slab", serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+h2 {
+  font-size: 1.3em;
+  font-family: "Josefin Slab", serif;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+  h2 a {
+    font-size: 1.3em;
+    font-family: "Josefin Slab", serif;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+
+img {
+  height: auto;
+  opacity: 1;
+  border: none;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto; }
+
+nav ul {
+  list-style: none;
+  font-size: 14px; }
+  nav ul li {
+    display: inline; }
+
+span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+p {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 21px;
+  color: #525252; }
+
+ul posts {
+  margin: 20px auto 40px;
+  font-size: 14px; }
+  ul posts li {
+    list-style: none; }
+
+/* IDs */
+#links-home ul {
+  font-style: italic;
+  margin: auto; }
+  #links-home ul li {
+    margin-left: 10px;
+    margin-right: 10px; }
+
+#links-pagelet ul {
+  top: 0%; }
+  #links-pagelet ul li {
+    margin-right: 0px;
+    margin-left: 20px; }
+
+/* CLASSES */
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+.collapsibleList li > input + * {
+  display: none; }
+
+.collapsibleList li > input:checked + * {
+  display: block; }
+
+.collapsibleList li > input {
+  display: none; }
+
+.collapsibleList label {
+  cursor: pointer; }
+
+.imgCornerLogo {
+  height: 50px;
+  width: 50px;
+  display: block; }
+
+.img-small {
+  max-width: 20%; }
+
+.img-med {
+  max-width: 50%; }
+
+.img-large {
+  max-width: 70%; }
+
+.static-border {
+  border-style: solid;
+  border-color: #88b8c9;
+  border-width: 10px; }
+
+.text-content {
+  font-color: #45966e;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0; }
+
+/* ------------------------*/
+/* ---------->>> WEBKIT <<<-----------*/
+/* ------------------------*/
+::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+  -webkit-border-radius: 0px;
+  background-color: #ffffff; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-left: 1px solid #45966e; }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-left: 1px solid #45966e; }
+
+/*# sourceMappingURL=stylesheet_a.css.map */
