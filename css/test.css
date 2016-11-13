@@ -67,11 +67,11 @@ nav {
     font-family: "Apercu_Mono";
     position: absolute;
     top: 25px;
-    text-align: right; }
+    right: 25px; }
 
 nav ul {
   list-style: none;
-  font-size: 14px; }
+  font-size: 20px; }
   nav ul li {
     margin-left: 20px;
     margin-right: 10px;
