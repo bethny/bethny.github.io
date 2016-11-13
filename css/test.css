@@ -65,7 +65,7 @@ img {
 
 nav {
     font-family: "Apercu_Mono";
-    position: fixed;
+    position: absolute;
     top: 20px; }
 
 nav ul {
