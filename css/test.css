@@ -14,8 +14,7 @@ a {
     color: #4ebbe1; }
 
 body {
-  background-image: url('imgs/old_mathematics_@2X.png');
-  background-repeat: repeat-y;
+  background-image: url("imgs/old_mathematics_@2X.png");
   margin: 60px auto;
   width: 70%;
   text-align: justify;
@@ -118,8 +117,9 @@ ul posts {
 
 .imgCornerLogo {
   height: 50px;
-  width: 50px;
-  display: block; }
+  width: 50px; 
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .img-small {
   max-width: 20%; }
