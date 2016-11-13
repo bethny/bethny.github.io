@@ -1,9 +1,17 @@
 /* VARIABLES */
 /* MIXINS */
 /* PROPERTIES */
+
+@font-face {
+    font-family: Apercu_Mono;
+    src: url(/fonts/apercu_mono_pro.otf);
+    font-family: Utopia;
+    src: url(/fonts/utopia.otf);
+}
+
 a {
   text-decoration: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Apercu_Mono", sans-serif;
   color: #0a648a;
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -32,7 +40,7 @@ footer ul {
 
 h1 {
   font-size: 3em;
-  font-family: "Josefin Slab", serif;
+  font-family: "Apercu_Mono", serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: left;
@@ -41,12 +49,12 @@ h1 {
 
 h2 {
   font-size: 1.3em;
-  font-family: "Josefin Slab", serif;
+  font-family: "Apercu_Mono", serif;
   text-transform: uppercase;
   letter-spacing: 3px; }
   h2 a {
     font-size: 1.3em;
-    font-family: "Josefin Slab", serif;
+    font-family: "Apercu_Mono", serif;
     text-transform: uppercase;
     letter-spacing: 3px; }
 
@@ -69,7 +77,7 @@ span {
 
 p {
   font-size: 14px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Utopia", sans-serif;
   line-height: 21px;
   color: #525252; }
 
@@ -136,7 +144,7 @@ ul posts {
 
 .text-content {
   font-color: #45966e;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Apercu_Mono", sans-serif;
   font-size: 1.3em;
   cursor: pointer;
   display: table;
