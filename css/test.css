@@ -54,11 +54,7 @@ img {
   height: auto;
   opacity: 1;
   border: none;
-  display: block;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 10px; }
+  display: block; }
 
 nav ul {
   list-style: none;
@@ -97,6 +93,9 @@ ul posts {
     margin-right: 0px;
     margin-left: 20px; }
 
+#p-home p {
+  margin: 100px 50px auto 300px; }
+
 /* CLASSES */
 .alignleft {
   float: left; }
@@ -119,8 +118,7 @@ ul posts {
 .imgCornerLogo {
   height: 50px;
   width: 50px; 
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin: 10px 10px 10px 10px; }
 
 .img-small {
   max-width: 20%; }
