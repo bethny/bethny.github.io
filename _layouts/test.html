@@ -2,6 +2,7 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
+			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="/css/test.css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
 		</head>
@@ -16,8 +17,9 @@
 			</nav>
 			<div style="clear: both;"></div>
 			<div class="container">
-			
-			{{ content }}
+				<div class="col-md-5 col-md-offset-2">
+					{{ content }}
+				</div>
 			
 			</div><!-- /.container -->
 			<footer>
