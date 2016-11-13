@@ -3,10 +3,12 @@
 /* PROPERTIES */
 
 @font-face {
-    font-family: Apercu_Mono;
-    src: url(/fonts/apercu_mono_pro.otf);
     font-family: Utopia;
     src: url(/fonts/utopia.otf);
+}
+@font-face {
+    font-family: Apercu_Mono;
+    src: url(/fonts/apercu_mono_pro.otf);
 }
 
 a {
