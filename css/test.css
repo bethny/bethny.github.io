@@ -65,10 +65,8 @@ img {
 
 nav {
     font-family: "Apercu_Mono";
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    position: fixed;
+    top: 20px; }
 
 nav ul {
   list-style: none;
