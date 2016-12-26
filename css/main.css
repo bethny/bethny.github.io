@@ -15,7 +15,7 @@ a {
 
 body {
   background: #ffffff;
-  margin: 60px auto;
+/*   margin: 60px auto; */
   width: 70%;
   text-align: justify;
   line-height: 150%; }
@@ -76,11 +76,11 @@ p {
   line-height: 21px;
   color: #525252; }
 
-ul posts {
+/* ul posts {
   margin: 20px auto 40px;
   font-size: 14px; }
   ul posts li {
-    list-style: none; }
+    list-style: none; } */
 
 /* IDs */
 #links-home ul {
