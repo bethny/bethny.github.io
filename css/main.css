@@ -96,6 +96,10 @@ ul posts {
     margin-right: 0px;
     margin-left: 20px; }
 
+#flashname {
+  width: 50%;
+}
+
 /* CLASSES */
 .alignleft {
   float: left; }
