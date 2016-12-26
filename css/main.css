@@ -101,11 +101,6 @@ p {
 }
 
 /* CLASSES */
-.alignleft {
-  float: left; }
-
-.alignright {
-  float: right; }
 
 .collapsibleList li > input + * {
   display: none; }
