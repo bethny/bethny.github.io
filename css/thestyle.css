@@ -1,18 +1,18 @@
 @font-face {
     font-family: utopia;
-    src: url('Type/utopia.otf');
+    src: url('/fonts/utopia.otf');
 }
 
 @font-face {
     font-family: Apercu_Mono;
     /*src: url(/fonts/apercu_mono_pro.otf);*/
-    src: url('Type/apercu_mono_pro.otf');
+    src: url('/fonts/apercu_mono_pro.otf');
 }
 
 @font-face {
     font-family: apercu;
     /*src: url(/fonts/apercu_mono_pro.otf);*/
-    src: url('Type/apercu.otf');
+    src: url('/fonts/Apercu.otf');
 }
 
 a {
