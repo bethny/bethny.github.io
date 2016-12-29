@@ -4,8 +4,8 @@
 }
 
 @font-face {
-	font-family: Utopia;
-    src: url(/fonts/utopia.otf);
+	font-family: utopia;
+	src: url(/fonts/utopia.otf);
 }
 
 a {
@@ -49,6 +49,8 @@ h2 {
 	font-size: 30px;
 	color: #126e9b;
 	margin: 0;
+	margin-top: 40px;
+	margin-bottom: -5px;
 }
 
 iframe {
@@ -76,11 +78,15 @@ ul {
 	text-align: center;
 }
 
-/* classes */
-.contacts {
-	list-style: none;
-	margin-left: 5%;
+#monogram {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 15%;
 }
+
+/* classes: divs */
 
 .inline-img-container {
 	display: flex;
@@ -95,6 +101,21 @@ ul {
 	margin-bottom: 30px;
 	margin-left: 3.5%;
 	margin-right: 3.5%;
+}
+
+/* classes: everything else */
+
+.SM {
+	font-size: 15px;
+}
+
+.contacts {
+	list-style: none;
+	margin-left: 5%;
+}
+
+.indented {
+	margin-left: 20px;
 }
 
 .navigation {
@@ -131,16 +152,17 @@ ul {
 }
 .portfolio a {
 	/*text-decoration: underline;*/
-	color: #999999;
-	-o-transition: .5s;
+	color: #7c7c7c;
+/*	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
-	transition: .5s;
+	transition: .5s;*/
 }
 
 .portfolio a:hover {
-	color: #673a9d;
+	background: #93bace;
+	color: #ffffff;
 }
 
 .portfolio_img {
@@ -148,14 +170,6 @@ ul {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
-/*.portfolio_img_inline {
-	height: 150px;
-	float: left;
-	margin-right: 3%;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}*/
 
 .socials {
 	list-style: none;
