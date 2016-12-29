@@ -1,11 +1,11 @@
 @font-face {
 	font-family: apercu;
-	src: url(/fonts/Apercu.otf);
+	src: url('/fonts/Apercu.otf');
 }
 
 @font-face {
 	font-family: utopia;
-	src: url(/fonts/utopia.otf);
+	src: url('/fonts/utopia.otf');
 }
 
 a {
