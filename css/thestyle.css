@@ -21,7 +21,7 @@ a {
 }
 
 body {
-	background-image: url('/imgs/old_mathematics.png');
+	background-image: url('Imgs/bkg.png');
 	background-attachment: fixed;
 	/*background-color: #3a3a3a;*/
 	padding: 0;
@@ -44,6 +44,15 @@ h1 {
 	margin: 0;
 }
 
+h2 {
+	font-family: Apercu_Mono;
+	font-weight: normal;
+	font-size: 25px;
+	color: #ffaa18;
+	padding: 0;
+	margin: 25px auto 15px auto;
+}
+
 p {
 	font-family: utopia;
 	font-size: 16px;
@@ -54,6 +63,24 @@ p {
 }
 
 /* classes: div */
+.3traits-container {
+	display: -webkit-box;
+  	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.3traits {
+	padding: 10.5%;
+	margin: 10.5%;
+	width: 100px;
+	/*margin: 20px;*/
+}
+
 .colorblock-container {
 	margin: 0;
   	padding: 0;
@@ -68,10 +95,10 @@ p {
 }
 .colorblock-child-grey {
 	background-color: #3a3a3a;
-	width: 200%;
-	height: 110%;
+	width: 100%;
 	margin-top: 50px;
 }
+
 .corner-logo {
 	position: fixed;
 	padding: 0;
@@ -100,19 +127,28 @@ p {
 	justify-content: space-between;
 }
 
+.limit-width {
+	width: 89.5%;
+	margin: auto;
+}
+
 .nav-wrapper {
 	position: fixed;	
 	top: 10px;
 	right: 5%;
 }
 
-/* classes: everything else */
-.grey-bkg {
-	color: #ffffff;
-	font-weight: normal;
-	margin: 2% 10.5% auto 10.5%;
-	padding: 0;
+.trait-container {
+	display: -webkit-box;
+  	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
 }
+
+/* classes: everything else */
 .home-h1 {
 	margin: 10% 50% auto 10.5%;
 	padding: 0;
@@ -157,6 +193,20 @@ p {
 
 .navigation a:hover {
   	color: #673a9d;
+}
+
+.trait {
+	width: 100px;
+	height: 100px;
+	margin-top: 80px;
+}
+
+.trait-text {
+	color: #ffffff;
+	font-size: 17px;
+	font-family: utopia;
+	margin-bottom: 90px;
+	font-weight: normal;
 }
 
 /* IDs */
