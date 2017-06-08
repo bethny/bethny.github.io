@@ -5,13 +5,11 @@
 
 @font-face {
     font-family: Apercu_Mono;
-    /*src: url(/fonts/apercu_mono_pro.otf);*/
     src: url('/fonts/apercu_mono_pro.otf');
 }
 
 @font-face {
     font-family: apercu;
-    /*src: url(/fonts/apercu_mono_pro.otf);*/
     src: url('/fonts/Apercu.otf');
 }
 
