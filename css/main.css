@@ -1,11 +1,11 @@
 @font-face {
-	font-family: apercu;
-	src: url('/fonts/Apercu.otf');
+	font-family: karla;
+	src: url('assets/type/Karla.ttf');
 }
 
 @font-face {
 	font-family: utopia;
-	src: url('/fonts/utopia.otf');
+	src: url('assets/type/utopia.otf');
 }
 
 a {
@@ -24,7 +24,7 @@ a:hover {
 
 body {
 	margin: 5%;
-	font-family: apercu;
+	font-family: karla;
 }
 
 div {
@@ -40,12 +40,12 @@ figure {
 }
 
 h1 {
-	font-family: apercu;
+	font-family: karla;
 	font-size: 40px;
 }
 
 h2 {
-	font-family: apercu;
+	font-family: karla;
 	font-size: 30px;
 	color: #126e9b;
 	margin: 0;
@@ -86,6 +86,28 @@ ul {
 	width: 15%;
 }
 
+
+#top, #bottom, #left, #right {
+	background: #98cfea;
+	margin: 0;
+	opacity: .8;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 10px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		width: 100%;
+		height: 10px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
 /* classes: divs */
 
 .inline-img-container {
@@ -97,10 +119,7 @@ ul {
 .inline-img-child {
 	padding: 0;
 	height: 150px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-left: 3.5%;
-	margin-right: 3.5%;
+	margin: 30px 3.5% 30px 3.5%;
 }
 
 /* classes: everything else */
@@ -119,16 +138,17 @@ ul {
 }
 
 .navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: center;
+	font-family: karla;
+  	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	display: -webkit-box;
+ 	display: -moz-box;
+ 	display: -ms-flexbox;
+ 	display: -webkit-flex;
+ 	display: flex;
+ 	-webkit-flex-flow: row wrap;
+  	justify-content: center;
 }
 
 .navigation a {
@@ -150,19 +170,31 @@ ul {
 .portfolio {
 	list-style: none;
 }
-.portfolio a {
+
+/*.portfolio a {
 	/*text-decoration: underline;*/
-	color: #7c7c7c;
-/*	-o-transition: .5s;
+/*	color: #7c7c7c;
+	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
-	transition: .5s;*/
+	transition: .5s;
+}*/
+
+.portfolio a {
+	text-decoration: underline;
+	color: #7c7c7c;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	transition: 0s;
 }
 
 .portfolio a:hover {
-	background: #93bace;
-	color: #ffffff;
+	/*background: #93bace;*/
+	color: #126e9b;
+	text-decoration: none;
 }
 
 .portfolio_img {
@@ -199,4 +231,84 @@ ul {
 
 .socials a:hover {
 	color: #2188cd;
+}
+
+/* classes: GD portfolio */
+
+.gd-container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+.cell {
+	margin: 1%;
+	background: #98cfea;
+	position: relative;
+}
+
+.cell img {
+	display: block;
+	max-width: 100%;
+	-o-transition: .5s;
+  	-ms-transition: .5s;
+  	-moz-transition: .5s;
+  	-webkit-transition: .5s;
+  	transition: .5s; 
+}
+
+.cell img:hover {
+	opacity: 0.5;
+}
+
+.grid {
+	margin: 0;
+	width: 102%;
+	margin-left: -1%;
+}
+
+@media screen and (min-width: 600px) {
+  	.grid {
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: row;
+  	}
+	.cell {
+	    width: calc(50% - 2%);
+	}
+}
+
+@media screen and (min-width: 1000px) {
+  	.cell {
+    	width: calc(33.3333% - 2%);
+  	}
+}
+
+.gd-txt {
+	background: rgba(0,0,0,0.5);
+  	color: white;
+  	display: table;
+  	height: 180px;
+  	left: 0; 	
+  	top: 0;
+  	width: 180px;
+  	position: absolute;
+}
+
+.gd-txt span {
+	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+}
+
+.gd-text span:hover {
+	opacity: 0;
 }

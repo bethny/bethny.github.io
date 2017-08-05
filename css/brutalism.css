@@ -1,15 +1,19 @@
 @font-face {
-    font-family: Eksell;
-    src: url('/fonts/EksellDisplay-Large.otf');
+    font-family: 'caslon';
+    src: url('../assets/type/CaslonGraphique.ttf') format('truetype');
+    font-weight = normal;
+    font-style = normal;
 }
 
 @font-face {
-    font-family: Maria;
-    src: url('/fonts/maria-webfont-webfont.ttf');
+    font-family: 'Maria';
+    src: url('../assets/type/maria-webfont-webfont.ttf');
+    font-weight = normal;
+    font-style = normal;
 }
 
 a {
-  font-family: Maria;
+  	font-family: Maria;
 	text-decoration: none;
 	color: #126e9b;
 	-o-transition: .5s;
@@ -26,6 +30,7 @@ a:hover {
 body {
 	margin: 5%;
 	font-family: Maria;
+	/*background-color: #d3ebf1;  */
 }
 
 div {
@@ -41,8 +46,9 @@ figure {
 }
 
 h1 {
-	font-family: Eksell;
+	font-family: caslon;
 	font-size: 40px;
+	font-weight: normal;
 }
 
 h2 {
@@ -141,7 +147,7 @@ ul {
 }
 
 .navigation a:hover {
-  color: #673a9d;
+  color: #ff6b68;
 }
 
 .portfolio {
