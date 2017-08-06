@@ -12,8 +12,21 @@
     font-style = normal;
 }
 
+@font-face {
+    font-family: 'Karla';
+    src: url('../assets/type/Karla.ttf');
+    font-weight = normal;
+    font-style = normal;
+}
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/type/Fakt-Normal.otf');
+    font-weight = normal;
+    font-style = normal;
+}
+
 a {
-  	font-family: Maria;
+  	font-family: Fakt;
 	text-decoration: none;
 	color: #126e9b;
 	-o-transition: .5s;
@@ -29,12 +42,12 @@ a:hover {
 
 body {
 	margin: 5%;
-	font-family: Maria;
+	font-family: Fakt;
 	/*background-color: #d3ebf1;  */
 }
 
 div {
-	font-family: Maria;
+	font-family: Fakt;
 	font-size: 13px;
 	width: 50%;
 	margin: auto;
