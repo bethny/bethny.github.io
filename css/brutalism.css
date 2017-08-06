@@ -130,6 +130,10 @@ ul {
 	margin-left: 5%;
 }
 
+.highlight {
+	text-shadow: 0 0 5px #126e9b;
+}
+
 .indented {
 	margin-left: 20px;
 }
