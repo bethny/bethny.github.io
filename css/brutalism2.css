@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'caslon';
+    src: url('../assets/type/CaslonGraphique.ttf') format('truetype');
+    font-weight = normal;
+    font-style = normal;
+}
+
+@font-face {
+    font-family: 'Maria';
+    src: url('../assets/type/maria-webfont-webfont.ttf');
+    font-weight = normal;
+    font-style = normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../assets/type/Karla.ttf');
+    font-weight = normal;
+    font-style = normal;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/type/Fakt-Normal.otf');
+    font-weight = normal;
+    font-style = normal;
+}
+
+/*ELEMENTS*/
+a {
+    font-family: Fakt;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #00FFFF;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d3ebf1;
+}
+div {
+    padding: 15px;
+}
+form {
+    height: 17px;
+    border: 1px solid black;
+}
+h1 {
+    font-family: caslon;
+    font-size: 75px;
+    font-weight: normal;
+    line-height: 65px;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    font-family: Fakt;
+    font-size: 17px;  
+    padding: 0;
+    margin: 3px;
+}
+
+span {
+    font-family: Fakt;
+    font-size: 20px;  
+    margin: 3px;
+    padding: 1px 3px 1px 3px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #00FFFF;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+}
+/*IDs*/
+/*#card-container {
+    height: 100%;
+    margin: 0;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}*/
+
+/*#fake-link{
+    font-family: Fakt;
+    font-size: 20px;
+    padding: 0;
+    margin: 3px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #00FFFF;
+    width: 190px;
+    height: 28px;
+
+}*/
+#back-card-internal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#blurb {
+    font-family: Fakt;
+    font-size: 19px;
+    color: #000000;
+    background-color: #00FFFF;
+    /*opacity: 0.5;*/
+}
+
+#face {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#form-front {
+    z-index: 2;
+    position: absolute;
+    height: 17px;
+    top: 85%;
+    left: 0%;
+    margin: 15px;
+    padding: 15px;
+}
+
+#form-back {
+    z-index: 1;
+    position: absolute;
+    height: 17px;
+    top: 85%;
+    left: 0%;
+    padding: 15px;
+    margin: 15px;
+}
+#hi {
+    /*margin-top: -130px;*/
+    margin: -63px auto;
+    font-size: 50px;
+    color: #FFFFFF;
+    /*color: #000000;*/
+    /*-webkit-text-stroke: 1px white;*/
+}
+
+#input-box {
+    font-family: Fakt;
+    font-size: 20px;
+    /*padding: 0;*/
+    /*margin: 20px 3px 3px 3px;*/
+    /*margin: 0;*/
+    /*color: #000000;*/
+    text-decoration: none;
+    /*background-color: #00FFFF;*/
+    /*display: inline-block;*/
+    /*cursor: pointer;*/
+}
+
+/*#link-1 {
+    background-color: #FFFF00;
+}
+#link-2 {
+    background-color: #FF00FF;
+}
+#link-3 {
+    background-color: #00FFFF;
+}*/
+#name-1 {
+    z-index = 0;
+    color: #FFFF00;
+}
+#name-2 {
+    z-index = 1;
+    color: #FF00FF;
+}
+#name-3 {
+    z-index = 2;
+    color: #00FFFF;
+}
+
+#top-card {
+    border: 2px solid black;
+    /*outline-style: double;*/
+    background-color: #FFFFFF;
+    width: 270px;
+    height: 340px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -135px;
+    cursor: move;
+}
+
+#back-card {
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    width: 270px;
+    height: 340px;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -125px;
+}
+
+#wip-text {
+    font-size: 12px;
+    position: absolute;
+    width: 70px;
+    top: 430px;
+    left: 400px;
+    display: none;
+    /*margin: 50vh 1000px 0 0;*/
+}
+
+
+/*CLASSES*/
+.another-container{
+    /*position: fixed;*/
+    /*margin: auto;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-child{
+    padding: 0;
+    margin: 0;
+}
+
+.card-child-bottom{
+    padding: 0;
+    margin-bottom: 15px;
+}
+/*.container {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}*/
+
+.clickable {
+    cursor: pointer;
+}
+.horiz-bounce {
+    position: absolute;
+}
+.index {
+    text-decoration: underline;
+}
+
+.name {
+    z-index: 2;
+    opacity: .2;
+    color: #00FFFF;
+    cursor: move;
+    
+    height: 125px;
+    width: 320px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -260px 0 0 -230px;
+}
+
+.translucent {
+    opacity: .9;
+}
+
+.stroke {
+    -webkit-text-stroke: 2px black;
+}
