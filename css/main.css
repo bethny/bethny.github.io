@@ -1,11 +1,11 @@
 @font-face {
 	font-family: karla;
-	src: url('assets/type/Karla.ttf');
+	src: url('../assets/type/Karla.ttf');
 }
 
 @font-face {
 	font-family: utopia;
-	src: url('assets/type/utopia.otf');
+	src: url('../assets/type/utopia.otf');
 }
 
 a {
@@ -59,8 +59,8 @@ iframe {
 }
 
 p {
-	font-size: 13px;
-	/*line-height: 175%;	*/
+	font-size: 15px;
+	line-height: 140%;	
 	margin: 20 0 20 0;
 }
 
@@ -231,6 +231,10 @@ ul {
 
 .socials a:hover {
 	color: #2188cd;
+}
+
+.text-body {
+	width: 90vh;
 }
 
 /* classes: GD portfolio */
