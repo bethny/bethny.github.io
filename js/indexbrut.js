@@ -33,12 +33,6 @@ $(document).ready(function(){
 		$('#square-button').show();
 	});
 
-	$('#email-field && #msg-field && #square-button').blur(function() { // cannot deselect; only deselects when button hit
-		$('#email-field').attr("value","tell me about yourself");
-		$('#email-field').css("width","240px");
-		$('#msg-field').fadeOut(); // DEBUG THIS 
-		$('#square-button').fadeOut();
-	});
 
 // COLOR TOGGLES 
 	$('#lbtn').on("click", function() {
@@ -161,4 +155,11 @@ $(document).ready(function(){
    		bounce.animate({top:'+=7'}, 750);
    		bounce.animate({top:'-=7'}, 750, hover);
 		}	
+
+	$('#email-field && #msg-field && #square-button').blur(function() { // cannot deselect; only deselects when button hit
+		$('#email-field').attr("value","tell me about yourself");
+		$('#email-field').css("width","240px");
+		$('#msg-field').fadeOut(); // DEBUG THIS 
+		$('#square-button').fadeOut();
+	});
 });
