@@ -69,6 +69,10 @@ $(document).ready(function(){
 		$('#blue').css("opacity","1");
 		$('span, a').css("background-color","#00FFFF");
 		$("#face").attr("src","assets/imgs/face.png");
+		$('#name-1').css("color","#FFFF00");
+		$('#name-3').css("color","#00FFFF");
+		$('#name-2').css("color","#FF00FF");
+		$('#name-1,#name-2,#name-3').css("opacity","0.2");
 
 		$('#link-1-span').on("mouseenter", function() {
 			$('#link-1-span').css("background-color","#00FFFF");
@@ -98,6 +102,10 @@ $(document).ready(function(){
 		$('#blue').css("opacity","0.5");
 		$('span, a').css("background-color","#cdcdcd");
 		$("#face").attr("src","assets/imgs/face-bw.png");
+		$('#name-1').css("color","#FFFF00");
+		$('#name-3').css("color","#00FFFF");
+		$('#name-2').css("color","#FF00FF");
+		$('#name-1,#name-2,#name-3').css("opacity","0.2");
 
 		$('#link-1-span').on("mouseenter", function() {
 			$('#link-1-span').css("background-color","#00FFFF");
