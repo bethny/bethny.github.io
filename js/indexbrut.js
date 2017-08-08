@@ -27,6 +27,8 @@ $(document).ready(function(){
 	$('#email-field, #msg-field, #square-button').focus(function() {
 		$('#email-field').attr("placeholder","email");
 		$('#email-field').css("width","70px");
+		$('#email-field').css("background-color","#00FFFF");
+		$('#email-field').css("border","2px solid #00FFFF");
 		$('#msg-field').show();
 		$('#square-button').show();
 	});

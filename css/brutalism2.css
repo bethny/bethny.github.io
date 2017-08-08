@@ -66,7 +66,7 @@ img {
 }
 
 input {
-    width: 200px;
+    width: 196px;
     box-sizing: border-box;
     border: 2px solid #cdcdcd;
     background-color: #cdcdcd;
@@ -194,6 +194,7 @@ span {
     background-size: 26px;
     background-position: center;
     display: none;
+    text-indent: -99999em;
 }
 
 #wip-text {
