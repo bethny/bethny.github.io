@@ -32,7 +32,6 @@ a {
     font-size: 20px;
     color: #000000;
     text-decoration: none;
-    /*background-color: #00FFFF;*/
     background-color: #cdcdcd;
 }
 body {
@@ -41,13 +40,17 @@ body {
     /*background-color: #d3ebf1;*/
     background-color: #cdcdcd;
 }
+
 div {
     padding: 15px;
 }
+
 form {
-    height: 17px;
-    border: 1px solid black;
+    font-family: Fakt;
+    font-size: 20px;
+    display: flex;
 }
+
 h1 {
     font-family: caslon;
     font-size: 75px;
@@ -60,6 +63,19 @@ h1 {
 img {
     width: 100px;
     height: 100px;
+}
+
+input {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #cdcdcd;
+    background-color: #cdcdcd;
+}
+
+input:focus {
+    background-color: #00FFFF;
+    border: 2px solid #00FFFF;
+    outline-width: 0;
 }
 
 p {
@@ -76,47 +92,20 @@ span {
     padding: 1px 3px 1px 3px;
     display: inline-block;
     vertical-align: middle;
-    /*background-color: #00FFFF;*/
     background-color: #cdcdcd;
 }
 
-ul {
-    list-style: none;
-    list-style-position: outside;
-}
 /*IDs*/
-/*#card-container {
-    height: 100%;
-    margin: 0;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-}*/
-
-/*#fake-link{
-    font-family: Fakt;
-    font-size: 20px;
-    padding: 0;
-    margin: 3px;
-    color: #000000;
-    text-decoration: none;
-    background-color: #00FFFF;
-    width: 190px;
-    height: 28px;
-
-}*/
 #back-card-internal{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+
 #blurb {
     font-family: Fakt;
     font-size: 19px;
     color: #000000;
-    /*background-color: #00FFFF;*/
     background-color: #FFFFFF;
 }
 
@@ -142,25 +131,6 @@ ul {
     margin-top: 5px;
 }
 
-#form-front {
-    z-index: 2;
-    position: absolute;
-    height: 17px;
-    top: 85%;
-    left: 0%;
-    margin: 15px;
-    padding: 15px;
-}
-
-#form-back {
-    z-index: 1;
-    position: absolute;
-    height: 17px;
-    top: 85%;
-    left: 0%;
-    padding: 15px;
-    margin: 15px;
-}
 #hi {
     /*margin-top: -130px;*/
     margin: -63px auto;
@@ -170,28 +140,12 @@ ul {
     /*-webkit-text-stroke: 1px white;*/
 }
 
-#input-box {
-    font-family: Fakt;
-    font-size: 20px;
-    /*padding: 0;*/
-    /*margin: 20px 3px 3px 3px;*/
-    /*margin: 0;*/
-    /*color: #000000;*/
-    text-decoration: none;
-    /*background-color: #00FFFF;*/
-    /*display: inline-block;*/
-    /*cursor: pointer;*/
-}
-
-/*#link-1 {
-    background-color: #FFFF00;
-}
-#link-2 {
-    background-color: #FF00FF;
-}
-#link-3 {
+#msg-field {
+    display: none;
+    width: 120px;
     background-color: #00FFFF;
-}*/
+    border: 2px solid #00FFFF;
+}
 #name-1 {
     z-index = 0;
     color: #FFFF00;
@@ -232,6 +186,16 @@ ul {
     margin: -190px 0 0 -125px;
 }
 
+#square-button {
+    border: 2px solid #00FFFF;
+    margin: 3px;
+    width: 30px;
+    background: url("../assets/imgs/plane.png") no-repeat;
+    background-size: 26px;
+    background-position: center;
+    display: none;
+}
+
 #wip-text {
     font-size: 12px;
     position: absolute;
@@ -239,20 +203,10 @@ ul {
     top: 430px;
     left: 400px;
     display: none;
-    /*margin: 50vh 1000px 0 0;*/
 }
 
 
 /*CLASSES*/
-
-/*COLOR OPTIONS*/
-/*OPTION 3, CMY*/
-.blue-body {
-    background-color: #d3ebf1;
-}
-.cmy-body {
-    background-color: #cdcdcd;
-}
 
 .another-container{
     /*position: fixed;*/
@@ -291,6 +245,7 @@ ul {
 
 .clickable {
     cursor: pointer;
+    /*font-size: 20px;*/
 }
 .horiz-bounce {
     position: absolute;
@@ -319,6 +274,14 @@ ul {
 .stroke {
     -webkit-text-stroke: 2px black;
 }
+.submission {
+    font-size: 20px;
+    font-family: Fakt;
+    margin: 3px;
+    padding: 1px 3px -2px 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /*MINOR CLASSES*/
 .span-C {
@@ -333,4 +296,16 @@ ul {
 .span-Y {
     background-color: #FFFF00;
 }
-=
+/*WEIRD WEBKIT STUFF*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000000;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000000;
+}

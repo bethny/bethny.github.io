@@ -24,6 +24,20 @@ $(document).ready(function(){
 		$('#link-3-a').toggleClass('a-white');
 	});
 
+	$('#email-field, #msg-field, #square-button').focus(function() {
+		$('#email-field').attr("placeholder","email");
+		$('#email-field').css("width","70px");
+		$('#msg-field').show();
+		$('#square-button').show();
+	});
+
+	$('#email-field && #msg-field && #square-button').blur(function() { // cannot deselect; only deselects when button hit
+		$('#email-field').attr("value","tell me about yourself");
+		$('#email-field').css("width","240px");
+		$('#msg-field').fadeOut(); // DEBUG THIS 
+		$('#square-button').fadeOut();
+	});
+
 // COLOR TOGGLES 
 	$('#lbtn').on("click", function() {
 		$('body').css("background-color","#1e506a");
@@ -54,6 +68,7 @@ $(document).ready(function(){
 			$('#link-3-a').css("background-color","#FFFFFF");
 		});
 		$('#link-1-span, #link-2-span, #link-3-span').on("mouseleave", function() {
+			// $('#link-1-span, #link-2-span, #link-3-span, #link-1-a, #link-2-a, #link-3-a').css("background-image","none");
 			$('#link-1-span, #link-2-span, #link-3-span').css("background-color","#e4c1e2");
 			$('#link-1-a, #link-2-a, #link-3-a').css("background-color","#e4c1e2");
 		});
