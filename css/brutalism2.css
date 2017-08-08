@@ -32,12 +32,14 @@ a {
     font-size: 20px;
     color: #000000;
     text-decoration: none;
-    background-color: #00FFFF;
+    /*background-color: #00FFFF;*/
+    background-color: #cdcdcd;
 }
 body {
     margin: 0;
     padding: 0;
-    background-color: #d3ebf1;
+    /*background-color: #d3ebf1;*/
+    background-color: #cdcdcd;
 }
 div {
     padding: 15px;
@@ -74,7 +76,8 @@ span {
     padding: 1px 3px 1px 3px;
     display: inline-block;
     vertical-align: middle;
-    background-color: #00FFFF;
+    /*background-color: #00FFFF;*/
+    background-color: #cdcdcd;
 }
 
 ul {
@@ -113,8 +116,23 @@ ul {
     font-family: Fakt;
     font-size: 19px;
     color: #000000;
+    /*background-color: #00FFFF;*/
+    background-color: #FFFFFF;
+}
+
+#blue {
     background-color: #00FFFF;
-    /*opacity: 0.5;*/
+    opacity: 0.5;
+}
+
+#cmy {
+    background-image: url("../assets/imgs/cmy-waves.png");
+    background-size: 50px 50px;
+}
+#lbtn {
+    background-image: url("../assets/imgs/sea-grad.png");
+    background-size: 35px 35px;
+    opacity: 0.5;
 }
 
 #face {
@@ -189,7 +207,6 @@ ul {
 
 #top-card {
     border: 2px solid black;
-    /*outline-style: double;*/
     background-color: #FFFFFF;
     width: 270px;
     height: 340px;
@@ -202,6 +219,8 @@ ul {
 }
 
 #back-card {
+    background-image: url("../assets/imgs/cmy-waves.png");
+    background-size: 300px 300px;
     border: 2px solid black;
     background-color: #FFFFFF;
     width: 270px;
@@ -225,6 +244,16 @@ ul {
 
 
 /*CLASSES*/
+
+/*COLOR OPTIONS*/
+/*OPTION 3, CMY*/
+.blue-body {
+    background-color: #d3ebf1;
+}
+.cmy-body {
+    background-color: #cdcdcd;
+}
+
 .another-container{
     /*position: fixed;*/
     /*margin: auto;*/
@@ -242,16 +271,23 @@ ul {
     padding: 0;
     margin-bottom: 15px;
 }
-/*.container {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    position: relative;
+
+.circle-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-}*/
+    padding: 0;
+    margin: 0;
+}
+
+.circle {
+    background-color: #cdcdcd;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    margin-left: -5.5px;
+    margin-bottom: 14px;
+    transform: scale(0.5, 0.5);
+    cursor: pointer;
+}
 
 .clickable {
     cursor: pointer;
@@ -267,8 +303,7 @@ ul {
     z-index: 2;
     opacity: .2;
     color: #00FFFF;
-    cursor: move;
-    
+    cursor: move;    
     height: 125px;
     width: 320px;
     position: absolute;
@@ -284,3 +319,18 @@ ul {
 .stroke {
     -webkit-text-stroke: 2px black;
 }
+
+/*MINOR CLASSES*/
+.span-C {
+    background-color: #00FFFF;
+}
+.a-white {
+    background-color: #FFFFFF;
+}
+.span-M {
+    background-color: #FF00FF;
+}
+.span-Y {
+    background-color: #FFFF00;
+}
+=
