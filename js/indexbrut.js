@@ -2,6 +2,9 @@ $(document).ready(function(){
 	// $('#wip').hover(function(){
 	// 	$('#wip-text').toggleClass('highlight');
 	// });
+	var $cyan = ('#00FFFF');
+	var $grey = ('#cdcdcd');
+	var $rose = ('#e4c1e2');
 
 	$(function() {
 		$('#wip').hover(function() { 
@@ -24,22 +27,22 @@ $(document).ready(function(){
 		$('#link-3-a').toggleClass('a-white');
 	});
 
-	$('#email-field, #msg-field, #square-button').focus(function() {
+	$('#email-field, #msg-field, .square-button').focus(function() {
 		$('#email-field').attr("placeholder","email");
 		$('#email-field').css("width","70px");
 		$('#email-field').css("background-color","#00FFFF");
 		$('#email-field').css("border","2px solid #00FFFF");
 		$('#msg-field').show();
-		$('#square-button').show();
+		$('.square-button').show();
 	});
 
 
 // COLOR TOGGLES 
 	$('#lbtn').on("click", function() {
 		$('body').css("background-color","#1e506a");
-		$('#top-card').css("background-color","#fcf4fb");
-		$('#back-card').css('background-image', 'url(assets/imgs/sea-grad.png)');
-		$('#back-card').css('background-size', '370px 370px');
+		$('#card-1').css("background-color","#fcf4fb");
+		$('#card-2').css('background-image', 'url(assets/imgs/sea-grad.png)');
+		$('#card-2').css('background-size', '370px 370px');
 		$('#blurb').css("background-color","#f9e8eb");
 		$('#lbtn').css("opacity","1");
 		$('#cmy').css("opacity","0.5");
@@ -50,6 +53,9 @@ $(document).ready(function(){
 		$('#name-3').css("color","#e4c1e2");
 		$('#name-2').css("color","#1e506a");
 		$('#name-1,#name-2,#name-3').css("opacity","0.5");
+		$('input').css("background-color",$rose);
+		$('input').css("border","2px solid #e4c1e2");
+		
 
 		$('#link-1-span').on("mouseenter", function() {
 			$('#link-1-span').css("background-color","#e4c1e2");
@@ -72,8 +78,8 @@ $(document).ready(function(){
 
 	$('#blue').on("click", function() {
 		$('body').css("background-color","#d3ebf1");
-		$('#top-card').css("background-color","#FFFFFF");
-		$('#back-card').css("background-image","none");
+		$('#card-1').css("background-color","#FFFFFF");
+		$('#card-2').css("background-image","none");
 		$('#blurb').css("background-color","#00FFFF");
 		$('#lbtn').css("opacity","0.5");
 		$('#cmy').css("opacity","0.5");
@@ -84,6 +90,8 @@ $(document).ready(function(){
 		$('#name-3').css("color","#00FFFF");
 		$('#name-2').css("color","#FF00FF");
 		$('#name-1,#name-2,#name-3').css("opacity","0.2");
+		$('input').css("background-color",$cyan);
+		$('input').css("border","2px solid #00FFFF");
 
 		$('#link-1-span').on("mouseenter", function() {
 			$('#link-1-span').css("background-color","#00FFFF");
@@ -104,19 +112,22 @@ $(document).ready(function(){
 	});
 
 	$('#cmy').on("click", function() {
-		$('body').css("background-color","#cdcdcd");
-		$('#top-card').css("background-color","#FFFFFF");
-		$('#back-card').css('background-image', 'url(assets/imgs/cmy-waves.png)');
+		$('body').css("background-color",$grey);
+		$('#card-1').css("background-color","#FFFFFF");
+		$('#card-2').css('background-image', 'url(assets/imgs/cmy-waves.png)');
 		$('#blurb').css("background-color","#FFFFFF");
 		$('#lbtn').css("opacity",".5");
 		$('#cmy').css("opacity","1");
 		$('#blue').css("opacity","0.5");
-		$('span, a').css("background-color","#cdcdcd");
+		$('span, a').css("background-color",$grey);
 		$("#face").attr("src","assets/imgs/face-bw.png");
 		$('#name-1').css("color","#FFFF00");
 		$('#name-3').css("color","#00FFFF");
 		$('#name-2').css("color","#FF00FF");
 		$('#name-1,#name-2,#name-3').css("opacity","0.2");
+		$('input').css("background-color",$grey);
+		$('input').css("border","2px solid" + $grey);
+
 
 		$('#link-1-span').on("mouseenter", function() {
 			$('#link-1-span').css("background-color","#00FFFF");
@@ -131,10 +142,9 @@ $(document).ready(function(){
 			$('#link-3-a').css("background-color","#FFFFFF");
 		});
 		$('#link-1-span, #link-2-span, #link-3-span').on("mouseleave", function() {
-			$('#link-1-span, #link-2-span, #link-3-span').css("background-color","#cdcdcd");
-			$('#link-1-a, #link-2-a, #link-3-a').css("background-color","#cdcdcd");
+			$('#link-1-span, #link-2-span, #link-3-span').css("background-color",$grey);
+			$('#link-1-a, #link-2-a, #link-3-a').css("background-color",$grey);
 		});
-
 	});
 
 // END OF COLOR TOGGLES
@@ -142,12 +152,8 @@ $(document).ready(function(){
 	$('#name-2').draggable({scroll:false});
 	$('#name-3').draggable({scroll:false});
 
-	$('#top-card').draggable({containment:"window"});
-
-	$('#fake-link').click(function() {
-		$('#fake-link').hide();
-		// $('form').appear();
-	});
+	$('#card-1').draggable({containment:"window"});
+	$('#card-2').draggable({containment:"window"});
 
 	var bounce = $('.horiz-bounce');
 	hover();
@@ -156,10 +162,10 @@ $(document).ready(function(){
    		bounce.animate({top:'-=7'}, 750, hover);
 		}	
 
-	$('#email-field && #msg-field && #square-button').blur(function() { // cannot deselect; only deselects when button hit
-		$('#email-field').attr("value","tell me about yourself");
-		$('#email-field').css("width","240px");
-		$('#msg-field').fadeOut(); // DEBUG THIS 
-		$('#square-button').fadeOut();
-	});
+	// $('#email-field && #msg-field && #square-button').blur(function() { // cannot deselect; only deselects when button hit
+	// 	$('#email-field').attr("value","tell me about yourself");
+	// 	$('#email-field').css("width","240px");
+	// 	$('#msg-field').fadeOut(); // DEBUG THIS 
+	// 	$('#square-button').fadeOut();
+	// });
 });
