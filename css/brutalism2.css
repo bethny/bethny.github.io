@@ -29,16 +29,16 @@
 /*ELEMENTS*/
 a {
     font-family: Fakt;
-    font-size: 20px;
+    font-size: 15px;
     color: #000000;
     text-decoration: none;
-    background-color: #cdcdcd;
+    border-bottom: 1px solid #00FFFF;
+    cursor: pointer;
 }
+
 body {
     margin: 0;
     padding: 0;
-    /*background-color: #d3ebf1;*/
-    background-color: #cdcdcd;
 }
 
 div {
@@ -59,6 +59,11 @@ h1 {
     line-height: 65px;
     padding: 0;
     margin: 0;
+}
+
+h3 {
+    font-family: Fakt;
+    font-size: 12px;
 }
 
 h2 {
@@ -87,9 +92,9 @@ input:focus {
 
 p {
     font-family: Fakt;
-    font-size: 17px;  
-    padding: 0;
-    margin: 3px;
+    font-size: 15px;  
+    padding-top: 10px;
+    line-height: 150%;
 }
 
 span {
@@ -114,6 +119,9 @@ span {
     font-size: 19px;
     color: #000000;
     background-color: #FFFFFF;
+    padding: 0;
+    margin: 3px;
+    line-height: normal;
 }
 
 #blue {
@@ -131,6 +139,15 @@ span {
     opacity: 0.5;
 }
 
+#corner {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -3;
+}
+
 #face {
     width: 260px;
     height: 260px;
@@ -145,6 +162,28 @@ span {
     color: #FFFFFF;
     /*color: #000000;*/
     /*-webkit-text-stroke: 1px white;*/
+}
+
+#index-body {
+    background-color: #cdcdcd;
+}
+
+#monogram {
+    position: fixed;
+    z-index: -2;
+    width: 300px;
+    height: 300px;
+    opacity: 0.5;
+}
+
+#corner-name {
+    position: fixed;
+    z-index: -3;
+    opacity: 0.3;
+    right: 0px;
+    bottom: -2px;
+    font-size: 80px;
+    text-align: right;
 }
 
 #msg-field {
@@ -275,11 +314,32 @@ span {
     margin: 3px;
     /*font-size: 12px;*/
 }
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+}
 .horiz-bounce {
     position: absolute;
 }
 .index {
     text-decoration: underline;
+    padding: 0;
+    margin: 3px;
+    line-height: normal;
+}
+
+.index-link {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    background-color: #cdcdcd;
+}
+
+.link-hover {
+    border-bottom: none;
+    color: #0079c1;
+    font-weight: normal;
 }
 
 .name {
@@ -295,8 +355,29 @@ span {
     margin: -260px 0 0 -230px;
 }
 
+.navigation {
+    list-style: none;
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 0;
+}
+
 .translucent {
     opacity: .9;
+}
+
+.socials {
+    display: flex;
+    padding: 0;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+
+.social-icon {
+    font-size: 30px;
+    padding: 0;
+    margin-top: 20px;
 }
 
 .square-button {
@@ -322,12 +403,19 @@ span {
     vertical-align: middle;
 }
 
+.text-body {
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
 /*MINOR CLASSES*/
 .span-C {
     background-color: #00FFFF;
 }
 .a-white {
     background-color: #FFFFFF;
+    color: #000000;
 }
 .span-M {
     background-color: #FF00FF;

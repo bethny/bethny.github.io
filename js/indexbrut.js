@@ -27,6 +27,10 @@ $(document).ready(function(){
 		$('#link-3-a').toggleClass('a-white');
 	});
 
+	$('a').hover(function() {
+		$(this).toggleClass('link-hover');
+	});
+
 	$('#email-field, #msg-field, .square-button').focus(function() {
 		$('#email-field').attr("placeholder","email");
 		$('#email-field').css("width","70px");
@@ -36,6 +40,19 @@ $(document).ready(function(){
 		$('.square-button').show();
 	});
 
+	$('.drag').draggable({scroll:false});
+	$('#name-2').draggable({scroll:false});
+	$('#name-3').draggable({scroll:false});
+
+	$('#card-1').draggable({containment:"window"});
+	$('#card-2').draggable({containment:"window"});
+
+	var bounce = $('.horiz-bounce');
+	hover();
+		function hover(){
+   		bounce.animate({top:'+=7'}, 750);
+   		bounce.animate({top:'-=7'}, 750, hover);
+		}	
 
 // COLOR TOGGLES 
 	$('#lbtn').on("click", function() {
@@ -149,23 +166,5 @@ $(document).ready(function(){
 
 // END OF COLOR TOGGLES
 
-	$('#name-2').draggable({scroll:false});
-	$('#name-3').draggable({scroll:false});
 
-	$('#card-1').draggable({containment:"window"});
-	$('#card-2').draggable({containment:"window"});
-
-	var bounce = $('.horiz-bounce');
-	hover();
-		function hover(){
-   		bounce.animate({top:'+=7'}, 750);
-   		bounce.animate({top:'-=7'}, 750, hover);
-		}	
-
-	// $('#email-field && #msg-field && #square-button').blur(function() { // cannot deselect; only deselects when button hit
-	// 	$('#email-field').attr("value","tell me about yourself");
-	// 	$('#email-field').css("width","240px");
-	// 	$('#msg-field').fadeOut(); // DEBUG THIS 
-	// 	$('#square-button').fadeOut();
-	// });
 });
