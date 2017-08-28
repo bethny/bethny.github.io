@@ -14,6 +14,26 @@ $(document).ready(function(){
 		});
 	});
 
+	$('#expand-svndl-17').click(function() {
+		$('#svndl-17').toggle(100);
+	});
+
+	$('#expand-pac').click(function() {
+		$('#pac').toggle(100);
+	});
+
+	$('#expand-svndl-16').click(function() {
+		$('#svndl-16').toggle(100);
+	});
+
+	$('#expand-3dsl').click(function() {
+		$('#3dsl').toggle(100);
+	});
+
+	$('#expand-ex').click(function() {
+		$('#ex').toggle(100);
+	});
+
 	$('#link-1-span').hover(function() {
 		$('#link-1-span').toggleClass('span-C');
 		$('#link-1-a').toggleClass('a-white');
