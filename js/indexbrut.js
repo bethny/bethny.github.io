@@ -60,7 +60,7 @@ $(document).ready(function(){
 		$('.square-button').show();
 	});
 
-	$('.drag').draggable({scroll:false});
+	$('#monogram-b').draggable({scroll:false});
 	$('#name-2').draggable({scroll:false});
 	$('#name-3').draggable({scroll:false});
 
@@ -92,6 +92,7 @@ $(document).ready(function(){
 		$('#name-1,#name-2,#name-3').css("opacity","0.5");
 		$('input').css("background-color",$rose);
 		$('input').css("border","2px solid #e4c1e2");
+		$('.center-text').css("color","#FFFFFF");
 		
 
 		$('#link-1-span').on("mouseenter", function() {
@@ -129,6 +130,7 @@ $(document).ready(function(){
 		$('#name-1,#name-2,#name-3').css("opacity","0.2");
 		$('input').css("background-color",$cyan);
 		$('input').css("border","2px solid #00FFFF");
+		$('.center-text').css("color","#000000");
 
 		$('#link-1-span').on("mouseenter", function() {
 			$('#link-1-span').css("background-color","#00FFFF");
@@ -164,6 +166,7 @@ $(document).ready(function(){
 		$('#name-1,#name-2,#name-3').css("opacity","0.2");
 		$('input').css("background-color",$grey);
 		$('input').css("border","2px solid" + $grey);
+		$('.center-text').css("color","#000000");
 
 
 		$('#link-1-span').on("mouseenter", function() {
