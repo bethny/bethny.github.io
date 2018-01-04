@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff6d9;
+}
+
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template rows: auto;
+	justify-items: center;
+	align-items: center;
+}
+
+.splash {
+	margin: auto;
+	height: 80vh;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+#unlit {
+	z-index: -1;
+}
+
+#lit {
+	display: none;
+	z-index: 1;
+}
