@@ -22,6 +22,31 @@ body {
 	grid-row-end: 2;
 }
 
+#bug-msg {
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+	margin: 0;
+	font-size: 13px;
+}
+
+#return {
+	position: fixed;
+    left: 30px;
+    top: 30px;
+    margin: 0;
+    font-size: 40px;
+}
+
+#return a {
+	text-decoration: none;
+	color: #00FF00;
+}
+
+#return a:hover {
+	color: black;
+}
+
 #unlit {
 	z-index: -1;
 }

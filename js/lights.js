@@ -5,10 +5,8 @@ $(document).ready(function(){
 		function() {
 			$('#lit').fadeIn(0);
 			$('body').animate({backgroundColor:"#000000"},$timing);
-			// $('#unlit').fadeOut($timing);
 			$('#unlit').css("display","none");
 		}, function() {
-			// $('#lit').fadeOut($timing);
 			$('#lit').css("display","none");
 			$('body').animate({backgroundColor:"#fff6d9"},$timing);
 			$('#unlit').fadeIn(0);

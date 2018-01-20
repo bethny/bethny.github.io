@@ -95,12 +95,13 @@ h4 span:after {
     height: 1px;
     content: '';
     border-bottom: 6px solid blue;
-    -webkit-animation: mymove 2s infinite;
-    animation: mymove 2s infinite;  
+    -webkit-animation: colorfade 3s infinite alternate;
+    animation: colorfade 3s infinite alternate;  
 }
 
-@-webkit-keyframes mymove {
-    50% {border-color: #00FFFF;}
+@-webkit-keyframes colorfade {
+    0% {border-color: blue;}
+    100% {border-color: #00FFFF;}
 }
 
 img {
@@ -138,6 +139,27 @@ span {
     background-color: #cdcdcd;
 }
 
+table {
+    width: 100%;
+}
+
+table, tr, td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Fakt;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+td {
+    width: 33.33%;
+    height: 50px;
+    position: relative;
+    valign: middle;
+}
 
 /*CLASSES*/
 
@@ -150,17 +172,18 @@ span {
 }
 
 .animate-color {
-      -webkit-animation:colorchange 3s infinite alternate;
-    }
+  -webkit-animation:colorchange 3s infinite alternate;
+  animation:colorchange 3s infinite alternate;
+}
 
-    @-webkit-keyframes colorchange {
-      0% {       
-        color: blue;
-      }     
-      100% {        
-        color: #00FFFF;
-      }   
-    }
+@-webkit-keyframes colorchange {
+  0% {       
+    color: blue;
+  }     
+  100% {        
+    color: #00FFFF;
+  }   
+}
 
 .card-child{
     padding: 0;
@@ -221,6 +244,8 @@ span {
 
 .cred-wrapper {
    position: fixed;
+   right: 0;
+   left: 0;
    bottom: 0;
    padding: 0;
    display: flex;
@@ -423,7 +448,8 @@ span {
     flex-direction: column;
     justify-content: flex-end;
 }
-#bkg-txt{
+
+/*#bkg-txt{
     width: 270px;
     height: 340px;
     z-index: -2;
@@ -431,7 +457,7 @@ span {
     top: 50%;
     left: 50%;
     margin: -170px 0 0 -135px;
-}
+}*/
 
 #blurb {
     font-family: Fakt;
@@ -446,6 +472,15 @@ span {
 #blue {
     background-color: #00FFFF;
     opacity: 0.5;
+}
+
+#bkg-text {
+    margin: 10px 30px 10px 10px;
+    font-size: 16px;
+}
+
+#bkg-text a {
+    font-size: 16px;
 }
 
 #cmy {
@@ -578,6 +613,11 @@ span {
     text-indent: 0;
     /*height: 20px;*/
     /*font-family: Fakt;*/
+}
+
+#tiny-stars {
+    font-size: 10px;
+    letter-spacing: 3px;
 }
 
 #wip-text {
