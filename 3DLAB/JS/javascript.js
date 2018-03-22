@@ -1,5 +1,14 @@
 var slideIndex = 1;
-// showSlides(slideIndex);
+
+var int = self.setInterval(function(){
+    showSlides(slideIndex);
+},3000);
+
+// $('.active-slide').click(function(){
+//     window.clearInterval(int);
+//     return false;
+// });
+
 window.onload = function(){
 	showSlides(slideIndex);
 };
