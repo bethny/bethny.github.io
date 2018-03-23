@@ -36,3 +36,13 @@ function showSlides(n) {
 	slides[slideIndex-1].style.display = "block"; 
 	dots[slideIndex-1].className += " active";
 }
+
+// JQUERY
+
+// $(document).ready(function(){
+// 	$('#logo').hover(function() { 
+// 		$("#logo").attr("src","Assets/Images/3Dlogo-colors-anaglyph.png");
+// 	}, function() { 
+// 		$("#logo").attr("src","Assets/Images/3Dlogo-colors.png"); 
+// 	});
+// });
