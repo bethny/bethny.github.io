@@ -3,6 +3,7 @@
 <head>
 	<title>3D Information for Perception and Action Lab</title>
 	<link rel="shortcut icon" type="image/png" href="Assets/Images/3Dthumbnail.png"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<script type="text/javascript" src="JS/javascript.js"></script>
 	<meta name="keywords" content="brown university, visual cognition, domini" />
@@ -10,7 +11,10 @@
 </head>
 <body>
 	<header><a href="index.html"><img id='logo' class='image_on' src='Assets/Images/3Dlogo-colors.png'><img id='logo' class='image_off' src='Assets/Images/3Dlogo-colors-anaglyph.png'></a><a href="https://www.brown.edu/"><img id='crest' src='Assets/Images/BrownCrest.png'></a></header>
-	<nav>
+	<nav id='nav-placeholder'>
+		<div class='nav-link'><a href="index.html">h</a></div>
+	</nav>
+	<nav id='main-nav'>
 		<div class='nav-link'><a href="index.html">home</a></div>
 		<div class='nav-link'><a href="people.html">people</a></div>
 		<div class='nav-link'><a href="research.html"><b>research</b></a></div>
@@ -19,9 +23,87 @@
 		<div class='nav-link'><a href="participate.html">participate</a></div>
 		<div class='nav-link'><a href="contact.html">contact</a></div>
 	</nav>
-	<h2>Reach-to-Grasp Adaptation</h2>
-	<h2>3D Information for Reach-to-Grasp</h2>
-	<h2>3D Vision</h2>
+	<img id='corner-logo' src='Assets/Images/3D-logo-icon.png'>
+	<a href='research.html'><button id='scroll-to-top'>&uarr;</button></a>
+	<div class='single-col-layout'>
+		<h2>Skip to...</h2>
+		<nav id='sub-menu'>
+			<h3><a href='#intro'>Introduction to 3D Vision</a></h3>
+			<h3><a href='#depth-cues'>Cues to Depth</a></h3>
+			<h3><a href='#adaptation'>Reach-to-Grasp Adaptation</a></h3>
+			<h3><a href='#3D-reach'>3D Information for Reach-to-Grasp</a></h3>
+		</nav>
+	</div>
+
+	<h2 id='intro'>Introduction to 3D Vision</h2>
+	<div class='outline single-col-layout'>
+		<p class='para-first'>In our daily life, we move in the environment, grab objects and perform a number of actions that are fundamental to our survival. These actions may seem very natural and effortless despite the fact that the brain performs an extremely complex analysis of the light pattern that falls on our eyes in order to determine the structure and shape of the surrounding objects. This problem is very difficult to solve since objects are three-dimensional but our eyes only register their two-dimensional projection (also called retinal image), like the film in a camera.</p>
+
+		<p>Most vision scientists have approached this problem by asking the following question: How does the brain derive the 3D structure of objects from the information that is present in a certain instant of time in a certain region of the retinal image? Because the image on the retina is two-dimensional and time can be added as a third dimension, the visual stimuli can be represented in a three-dimensional space. The research conducted so far has focused on the problem of how local regions of this space-time domain are analyzed by the visual system, while the problem of how the visual system is capable of integrating the information contained in different spatial-temporal regions has been neglected.</p>
+
+		<p class='para-last'>The overall objective of the present research project is to investigate the spatial-temporal integration of information in the recovery of 3D shape from retinal projections. In particular, three goals will be pursued. First, the research will investigate in which manner local visual processing is affected by interactions with stimulus information present in different space-time locations.  Second, the research will exploit the stimulus conditions that are responsible for spatial and temporal organization. Third, the research will determine whether spatial and temporal interactions occur among different sources of depth information. Understanding how the human visual system solves this problem will not only be a valuable advance in the study of visual perception but could also produce novel insights toward the building of machines that mimic our behavior and interactions.</p>
+	</div>
+
+	<h2 id='depth-cues'>Some Cues to Depth</h2>
+	<div class='outline single-col-layout'>
+		<h3 class='para-first' id='first'>Convergence</h3>
+		<p>Convergence is the degree at which the eyes are turned inward in order to fixate on an object. The eyes are said to fixate on something when they are both aimed directly at the same point in space. The lines of sight from each eye meet at a point to form an angle called the convergence angle, which varies depending on the distance of the object from the viewer, with smaller angles occurring at farther distances and larger angles occurring at closer distances.  The convergence angle can theoretically provide information about the absolute distance of an object.</p>
+
+		<h3>Stereo Vision / Binocular Disparity</h3>
+		<p>Due to the fact that the eyes are displaced laterally on the head, when viewing an object, the same point in space will project to slightly different positions on the retina in each eye. The way in which these images are displaced is dependent upon the distance of the object from the viewer. Points located nearer to the observer than the fixation point will have a greater binocular disparity than those located farther away. Binocular disparity thus provides relative depth information and theoretically could provide absolute depth information, if the disparities are scaled by the known distance to the fixation point.</p>
+
+		<p>A good way to see binocular disparity in action is to close one eye and line your two index fingers up, one about six inches and the other about a foot away from your face. When the further finger appears to be completely blocked by the closer one, switch eyes. You will notice that the same visual environment in front of your face looks entirely different.</p>
+
+		<p>Below is a set of stereo images. To see the scene in stereo, you must either angle your eyes at something that is behind the screen (<a href="https://www.triplespark.net/render/stereo/pview.html#parallel">parallel method</a>) or in front of the screen (<a href="https://www.triplespark.net/render/stereo/pview.html#cross">cross-eyed method</a>) and focus on the screen. Many people find this difficult to do at first, but it gets easier with practice.</p>
+
+		<div class='stereo single-col-layout'>
+			<img class='img-stereo' src='Assets/Images/left-parallel.png'>
+			<img class='img-stereo' src='Assets/Images/right-parallel.png'>
+		</div>
+		<div class='stereo single-col-layout'>
+			<p class='subtitle'>View with the parallel method</p>
+		</div>
+		<div class='stereo single-col-layout'>
+			<img class='img-stereo' src='Assets/Images/right-crossed.png'>
+			<img class='img-stereo' src='Assets/Images/left-crossed.png'>
+		</div>
+		<div class='stereo single-col-layout'>
+			<p class='subtitle'>View with the cross-eyed method</p>
+		</div>
+
+		<h3>Motion</h3>
+		<p>Motion is an important cue to depth and arises due to information from motion parallax or object motion. Motion parallax refers to the different rates of motion of stationary objects as they vary in distance from a moving observer. As the standpoint of the observer changes, objects at different distances will have different retinal velocities on the eye. Closer objects move further and faster than more distant objects. The different velocities therefore provide cues about the relative distance of points in the environment.</p>
+
+		<h3>Texture</h3>
+		<p>The systematic and gradual changes in texture of a surface also provide cues to depth. Otherwise-equal texture components reduce in size as distance increases (imagine sitting on a tiled kitchen floor; the tiles close to you appear larger than those further away). Relative distance across the surface can therefore be judged based on the size of these texture items.</p>
+
+		<p>The projection of the individual texture elements on the retina also deforms in shape due to changes in depth. Consider again the tiled kitchen floor; the parallel lines formed by the rows of tiles converge somewhat as they stretch off into the distance, and individual tiles look more like trapezoids than squares.  As the mind assumes a regular texture, however, these deformations are processed as changes in distance and depth.</p>
+
+		<h3>Accommodation</h3>
+		<p class='para-last'>Accommodation is the process by which the eye alters the curvature of the lens to view objects at different distances clearly. Viewing closer objects requires the lens to be more curved, while viewing distant objects requires it to be more flat. The brain then factors this physical information into our judgments of distance.</p>
+	</div>
+
+	<h2 id='adaptation'><span>Reach-to-Grasp Adaptation</span></h2>
+	<div class='indented single-col-layout'>
+		<p>content</p>
+	</div>
+
+	<h2 id='3D-reach'>3D Information for Reach-to-Grasp</h2>
+	<div class='single-col-layout outline'>
+		<h3 id='first'>Cue Combination &amp; Virtual Reality</h3>
+		<p>Current work performed in the 3DIPA Lab concerns the ways in which people combine any number of cues to depth in order to extract three-dimensional structure as accurately and efficiently as possible. In everyday experience, one encounters many of these cues at once, and it is difficult to interpret the individual influence of any single cue.</p>
+		<p>This is where virtual display becomes crucial; in a virtual environment, the presence (or absence) of these cues can be controlled. The ability to generate, for example, only one cue at a time, or even cues in conflict with one another, allows for insight that would be otherwise unavailable in natural environments. The majority of research undertaken by the 3DIPA Lab implements virtual stimuli.</p>
+
+		<h3>Real-World Replication</h3>
+		<p>Three-dimensional perception studies conducted with virtual stimuli have always been victim to some criticism. A new series of studies in the 3DIPA Lab seeks to put some of these criticisms to rest. The recent construction of a large-scale, real-world version of our most prominent virtual display will allow us to demonstrate that people perceive and behave more similarly in response to virtual stimuli on a computer screen and tangible stimuli in everyday surroundings than critics believe.</p>
+
+		<center><video class='video-inset' autoplay="autoplay" muted loop>
+			<source src="Assets/Media/vr-grasp.webm" type="video/webm">
+			<source src="Assets/Media/vr-grasp.mp4" type="video/mp4">
+		</video>
+		<p class='subtitle'>exp</p></center>
+	</div>
+
 	<footer>
 		<div class='ft-link'><a href="https://www.brown.edu/">Brown University</a></div>
 		<div class='ft-link'><a href="http://www.brown.edu/Departments/CLPS/"><img id='clps' src='Assets/Images/clps-banner.png'></a></div>
