@@ -2,12 +2,16 @@
 
 body {
 	width: 70vw;
-	margin: 0px auto 80px auto;
+	margin: 0 auto;
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	display: grid;
 	grid-template-columns: [col-1-start] 60% [col-1-end col-2-start] auto [col-2-end];
 	grid-auto-rows: min-content;
+}
+
+button p {
+	margin: 0;
 }
 
 footer {
@@ -28,7 +32,7 @@ header {
 	display: flex;
   	align-items: center;
   	justify-content: space-between;
-  	margin: 10px 0 10px 0;
+  	margin: 10px 0;
   	padding: 0;
 }
 
@@ -52,10 +56,10 @@ img {
 nav {
 	display: flex;
 	justify-content: space-between;
-	margin: 0px 0 30px 0;
+	margin-bottom: 30px;
 	border-top: 2px solid #ED1C24;
 	border-bottom: 2px solid #ED1C24;
-	padding: 20px 0 20px 0;
+	padding: 20px 0;
 }
 
 p {
@@ -63,8 +67,7 @@ p {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	line-height: 140%;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin: 15px 0;
 }
 
 p a {
@@ -78,7 +81,6 @@ p a:hover {
 
 span {
     position: relative;
-    padding: 0;
     padding-bottom: 5px;
     margin: 0;
 }
@@ -147,7 +149,7 @@ span.dot:after {
 }
 
 .indented {
-	margin: 0 35px 0 35px;
+	margin: 0 35px;
 }
 
 .intro {
@@ -165,7 +167,7 @@ span.dot:after {
 	top: 0;
 	z-index: 100;
 	position: fixed;
-	background-color: rgba(255,255,255,1);
+	background-color: #FFFFFF;
 	width: inherit;
 	margin-top: 0;
 }
@@ -195,11 +197,11 @@ span.dot:after {
 }
 
 .para-first {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .para-last {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .scroll-fade {
@@ -233,7 +235,7 @@ span.dot:after {
 }
 
 #alumni p {
-	margin: 5px 0 5px 0;
+	margin: 5px 0;
 }
 
 #bio-pi {
@@ -290,7 +292,6 @@ span.dot:after {
 	font-size: 20px;
 	border: 0;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -356,18 +357,15 @@ img {vertical-align: middle;}
 	border-radius: 0 3px 3px 0;
 }
 
-/*Position the previous button on the left.*/
 .prev {
 	left: 0;
 }
 
-/* Position the next button to the right */
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
 	background-color: rgba(0,0,0,0.8);	
 }
@@ -439,7 +437,7 @@ img {vertical-align: middle;}
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		margin: 0px 0 10px 0;
+		margin: 0 0 10px 0;
 		padding: 10px 0 5px 0;
 		width: 100%;
 	}
