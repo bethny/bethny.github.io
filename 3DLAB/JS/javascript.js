@@ -58,10 +58,19 @@ $(document).ready(function() {
 			$('#nav-placeholder').css("display","none");
 		}
 		if ($(window).scrollTop() > $vh) {
-			$('#scroll-to-top').css("display","block");
+			$('#scroll-button').css("display","block");
+			$('#scroll-button').addClass("button-show");
 		}
 		if ($(window).scrollTop() < $vh) {
-			$('#scroll-to-top').css("display","none");
+			$('#scroll-button').css("display","none");
+			$('#scroll-button').removeClass("button-show");
 		}
-  });
+  	});
+
+  	$('#scroll-button').click(function () {
+	    $("html, body").animate({
+	      scrollTop: 0
+	    }, 600, 'swing');
+    	return false;
+  	});
 });

@@ -111,6 +111,14 @@ span:after {
 	width: 150px;
 }
 
+.button-show {
+	display: block;
+	-webkit-animation: 0.4s slideUp 1;
+	-moz-animation: 0.4s slideUp 1;
+	-o-animation: 0.4s slideUp 1;
+	animation: 0.4s slideUp 1
+}
+
 span.dot:after {
 	border-bottom: none;
 }
@@ -141,6 +149,11 @@ span.dot:after {
 	height: 150px;
 	width: 150px;
 	margin: 0;
+}
+
+.img-facilities {
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 .img-stereo {
@@ -259,7 +272,7 @@ span.dot:after {
     opacity: 0.3;
     right: -20px;
     bottom: -75px;
-    width: 40%;
+    width: 30%;
 }
 
 #crest {
@@ -279,7 +292,7 @@ span.dot:after {
 	opacity: 0;
 }
 
-#scroll-to-top {
+#scroll-button {
 	display: none;
 	width: 40px;
 	height: 40px; 
@@ -293,6 +306,16 @@ span.dot:after {
 	border: 0;
 	display: flex;
 	justify-content: center;
+	cursor: pointer;
+}
+
+#scroll-button:hover {
+	background-color: white;
+	color: #ED1C24;
+}
+
+#scroll-button:focus {
+	outline: none;
 }
 
 #sub-menu {
@@ -310,6 +333,27 @@ span.dot:after {
 #sub-menu a:hover {
 	color: black;
 }
+
+@-webkit-keyframes slideUp {
+	0% {bottom: -120px}
+	85%{bottom: 20px}
+	100%{bottom: 15px}
+}
+@-moz-keyframes slideUp {
+	0%{bottom: -120px} 
+	85%{bottom: 20px}
+	100%{bottom: 15px}
+}
+@-o-keyframes slideUp {
+	0%{bottom: -120px}
+	85%{bottom: 20px}
+	100%{bottom: 15px}
+	}
+@keyframes slideUp { 
+	0%{bottom: -120px}
+	85%{bottom: 20px}
+	100%{bottom: 15px}
+	}
 
 /*CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL*/
 
