@@ -1,0 +1,313 @@
+body {
+	font-family: Helvetica Neue;
+	margin: 0;
+	height: 100vh;
+  background-color: black;
+	/*background-image: url("Assets/Images/Bkg.png");*/
+	/*background-size: cover;*/
+	overflow: hidden;
+}
+
+a {
+	color: white;
+}
+
+h1, nav {
+	font-weight: normal;
+	font-size: 50pt;
+	margin: 0;
+}
+
+nav, .contact {
+	font-size: 20pt;
+}
+
+nav a {
+	margin-left: 10px;
+}
+
+h1 {
+  color: blue;
+}
+
+header {
+	/*border-bottom: solid 1px black;*/
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+p {
+  padding: 10px 40px;
+	line-height: 130%;
+  color: white;
+  font-size: 18pt;
+}
+
+span {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+span:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    border-bottom: 2px solid #005ac2;
+}
+
+.tiny {
+  font-size: 8pt;
+}
+
+.box {
+	margin: 40px;
+	border: solid 1px black;
+	border-top: solid 10px black;
+	width: 30%;
+	padding: 0 20px;
+	background: white;
+	/*cursor: move;*/
+}
+
+.about {
+	position: absolute;
+	left: 0;
+	font-size: 15pt;
+}
+
+.email {
+	position: absolute;
+    top: 86.2%;
+    left: 90.7%;
+}
+
+.engagement {
+	position: absolute;
+	width: 430px;
+	font-size: 10pt;
+	right: 0;
+	top: 30vh;
+}
+
+.resume {
+	width: 105px;
+	-ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari 3-8 */
+    transform: rotate(20deg);
+    position: absolute;
+    top: 61vh;
+    left: 35vw;
+    transition: all 1s ease-out;
+}
+
+.icon {
+	width: calc(1024px * .06);
+	height: calc(765px * .06);
+}
+
+.draggable {
+	cursor: move;
+}
+
+.floater {
+	z-index: 10;
+}
+
+.active {
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari 3-8 */
+    transform: rotate(0deg);
+	position: absolute;
+	top: 10px;
+	margin: 0 auto;
+	height: 90vh;
+	width: calc(90vh * 8.5/11);
+}
+
+.active #resume-txt {
+	display: none;
+	/*opacity: 0;*/
+}
+
+.active #pdf {
+	display: block;
+	height: 90vh;
+	width: calc(90vh * 8.5/11);
+}
+
+.inactive {
+	opacity: 0.2;
+}
+
+.engagement-link.inactive, .about-link.inactive {
+	display: none;
+}
+
+#pdf {
+	display: none;
+}
+
+.floater-img {
+	width: calc(1263px * .2);
+	height: calc(1067px * .2);
+}
+
+#floater-1-div {
+	position: absolute;
+	left: 60vw;
+	top: 20vh;
+}
+
+#floater-2-div {
+	position: absolute;
+	left: 20vw;
+	top: 35vh;
+}
+
+#floater-3-div {
+	position: absolute;
+	left: 10vw;
+	top: 80vh;
+}
+
+#floater-4-div {
+	position: absolute;
+	left: 80vw;
+	top: 70vh;
+}
+
+/*CANVAS*/
+.background {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+/*
+#reveal-bg {
+  display: block;
+  background-image: url('Assets/Images/transparent-bg.png') !important;
+  background-image: -webkit-image-set(url('Assets/Images/transparent-bg.png') 1x,
+  url('Assets/Images/transparent-bg.png') 2x );
+  cursor:  crosshair;
+  cursor: url(Assets/Images/Cursor-1px-Opacity.png) 53 53, crosshair;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+}
+*/
+/*FANCY UNDERLINE*/
+.link-2 {
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	padding: 0;
+	-webkit-transition: color ease 0.3s;
+	transition: color ease 0.3s;
+}
+
+.link-2::before, .link-2::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+	    height: 6%;
+	}
+
+.link-2::before {
+    width: 0%;
+    left: 0;
+    bottom: 2px;
+    -webkit-transition: width ease 0.4s;
+    transition: width ease 0.4s;
+}
+
+.link-2::after {
+    width: 100%;
+    left: 0;
+    bottom: 2px;
+    -webkit-transition: all ease 0.6s;
+    transition: all ease 0.6s;
+}
+
+.link-2:hover::before {
+      width: 100%;
+}
+
+.link-2:hover::after {
+      left: 100%;
+      width: 0%;
+      -webkit-transition: all ease 0.2s;
+      transition: all ease 0.2s;
+}
+
+/*ROTATING CIRCLE TEXT*/
+
+#container { margin: 0%; z-index: -10;}
+
+#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden; }
+
+#circle text { font-family: 'Helvetica Neue', Arial; font-size: 16px; }
+
+#circle svg { position: absolute; left: 0; top: 10%; width: 100%; height: 300px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 7s;
+     -moz-animation-duration: 7s;
+      -ms-animation-duration: 7s;
+       -o-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
