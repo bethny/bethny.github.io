@@ -1,21 +1,60 @@
+@font-face {
+  font-family: Ogg;
+  src: url("../assets/type/Ogg-Roman.otf");
+
+  font-family: Relative;
+  src: url("../assets/type/relative-mono10pitch.ttf");
+}
+
+/*cursor*/
+body, html {
+  cursor: url(https://rm-content.s3-accelerate.amazonaws.com/5727aec1db932f2f3ac1f556/957532/upload-e1250e30-139f-11e8-af61-ef72959cb5f6.png) 25 15, auto;
+  height: 100%;
+}
+
+a:link {
+  cursor: url(https://rm-content.s3-accelerate.amazonaws.com/5727aec1db932f2f3ac1f556/957532/upload-e1250e30-139f-11e8-af61-ef72959cb5f6.png) 25 15, pointer;
+  height: 100%;
+}
+
+
+a:hover {
+  cursor: url(https://rm-content.s3-accelerate.amazonaws.com/5727aec1db932f2f3ac1f556/957532/upload-da51a890-141a-11e8-b3e1-7b376df50f61.png) 25 15, pointer;
+  height: 100%;
+}
+
 body {
-	font-family: Helvetica Neue;
+	/*font-family: Helvetica Neue;*/
 	margin: 0;
+  padding: 35px 30% 40px 5%;
 	height: 100vh;
-  background-color: black;
-	/*background-image: url("Assets/Images/Bkg.png");*/
-	/*background-size: cover;*/
+  font-family: Relative;
+  font-size: 16pt;
+  /*background-color: black;*/
 	overflow: hidden;
 }
 
 a {
-	color: white;
+	color: #FF6D70;
 }
+/*
+a:visited {
+  color: #AFC9D2;
+}*/
 
 h1, nav {
 	font-weight: normal;
 	font-size: 50pt;
 	margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Ogg;
+  font-size: 50pt;
+  line-height: 1.1;
+  color: #FF6D70;
+  margin-bottom: 20px;
 }
 
 nav, .contact {
@@ -26,23 +65,25 @@ nav a {
 	margin-left: 10px;
 }
 
-h1 {
-  color: blue;
-}
-
 header {
 	/*border-bottom: solid 1px black;*/
-	padding: 20px 40px;
+	/*padding: 20px 40px;*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+li {
+  /*color: white;*/
+  /*font-size: 18pt;*/
+  margin-bottom: 2px;
+}
+
 p {
-  padding: 10px 40px;
-	line-height: 130%;
-  color: white;
-  font-size: 18pt;
+  /*padding: 10px 40px;*/
+	/*line-height: 130%;*/
+  /*color: white;*/
+  /*font-size: 18pt;*/
 }
 
 span {
@@ -61,126 +102,28 @@ span:after {
     border-bottom: 2px solid #005ac2;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cornerpic {
+  width: 300px;
+  height: auto;
+  bottom: -50px;
+  right: 30px;
+  position: absolute;
+}
+
 .tiny {
   font-size: 8pt;
+  margin-top: 35px;
 }
 
-.box {
-	margin: 40px;
-	border: solid 1px black;
-	border-top: solid 10px black;
-	width: 30%;
-	padding: 0 20px;
-	background: white;
-	/*cursor: move;*/
+.strike {
+  text-decoration: line-through;
 }
 
-.about {
-	position: absolute;
-	left: 0;
-	font-size: 15pt;
-}
-
-.email {
-	position: absolute;
-    top: 86.2%;
-    left: 90.7%;
-}
-
-.engagement {
-	position: absolute;
-	width: 430px;
-	font-size: 10pt;
-	right: 0;
-	top: 30vh;
-}
-
-.resume {
-	width: 105px;
-	-ms-transform: rotate(20deg); /* IE 9 */
-    -webkit-transform: rotate(20deg); /* Safari 3-8 */
-    transform: rotate(20deg);
-    position: absolute;
-    top: 61vh;
-    left: 35vw;
-    transition: all 1s ease-out;
-}
-
-.icon {
-	width: calc(1024px * .06);
-	height: calc(765px * .06);
-}
-
-.draggable {
-	cursor: move;
-}
-
-.floater {
-	z-index: 10;
-}
-
-.active {
-	-ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Safari 3-8 */
-    transform: rotate(0deg);
-	position: absolute;
-	top: 10px;
-	margin: 0 auto;
-	height: 90vh;
-	width: calc(90vh * 8.5/11);
-}
-
-.active #resume-txt {
-	display: none;
-	/*opacity: 0;*/
-}
-
-.active #pdf {
-	display: block;
-	height: 90vh;
-	width: calc(90vh * 8.5/11);
-}
-
-.inactive {
-	opacity: 0.2;
-}
-
-.engagement-link.inactive, .about-link.inactive {
-	display: none;
-}
-
-#pdf {
-	display: none;
-}
-
-.floater-img {
-	width: calc(1263px * .2);
-	height: calc(1067px * .2);
-}
-
-#floater-1-div {
-	position: absolute;
-	left: 60vw;
-	top: 20vh;
-}
-
-#floater-2-div {
-	position: absolute;
-	left: 20vw;
-	top: 35vh;
-}
-
-#floater-3-div {
-	position: absolute;
-	left: 10vw;
-	top: 80vh;
-}
-
-#floater-4-div {
-	position: absolute;
-	left: 80vw;
-	top: 70vh;
-}
 
 /*CANVAS*/
 .background {
@@ -194,23 +137,7 @@ span:after {
   height: 100%;
   z-index: 100;
 }
-/*
-#reveal-bg {
-  display: block;
-  background-image: url('Assets/Images/transparent-bg.png') !important;
-  background-image: -webkit-image-set(url('Assets/Images/transparent-bg.png') 1x,
-  url('Assets/Images/transparent-bg.png') 2x );
-  cursor:  crosshair;
-  cursor: url(Assets/Images/Cursor-1px-Opacity.png) 53 53, crosshair;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 150;
-}
-*/
+
 /*FANCY UNDERLINE*/
 .link-2 {
 	position: relative;
