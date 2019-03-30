@@ -143,8 +143,10 @@ ul {
 }
 
 .img-caption {
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 20px;
+  /*font-family: Helvetica Neue;*/
+  width: 150px;
 }
 
 .navlink {
