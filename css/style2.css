@@ -182,6 +182,18 @@ a.navlink:hover {
   letter-spacing: -6px;
 }
 
+.portfolio {
+  height: 700px;
+  margin-top: 30px;
+}
+
+.portfolio-caption {
+  margin-left: 45px; 
+  margin-top: -40px;
+  font-family: Helvetica Neue;
+  font-size: 16pt;
+}
+
 .tiny {
   font-size: 11pt;
   margin-top: 35px;
