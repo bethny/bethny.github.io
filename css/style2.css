@@ -37,6 +37,12 @@ body {
   font-size: 22pt;
 }
 
+body.maps-page {
+  padding: 0;
+  margin-left: -200px;
+  overflow: hidden;
+}
+
 a {
 	color: #FF6D70;
   font-family: Helvetica Neue;
@@ -56,6 +62,12 @@ h1 {
   line-height: 1.1;
   color: #FF6D70;
   margin-bottom: 20px;
+}
+
+iframe {
+  z-index: -1000;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 nav, .contact {
@@ -84,6 +96,19 @@ span {
     font-size: 50pt;
     line-height: 1.1;
     color: #FF6D70;
+}
+
+span.maps-content {
+    padding-bottom: 0;
+    /*margin: 0px -4px 0 -4px;*/
+    font-family: Pixel;
+    color: #FFFFFF;
+    font-size: 22pt;
+}
+
+span.maps-content h1 {
+  font-family: Ogg;
+  font-size: 35pt;
 }
 
 ul {
@@ -159,6 +184,26 @@ a.navlink:hover {
   font-family: Pixel;
   font-size: 20pt;  
   /*text-decoration: none;*/
+}
+
+.over {
+  float: right;
+  /*width: 560px;*/
+  width: 500px;
+  height: 700px;
+  margin-top: -120vh;
+  margin-right: 62vw;
+  overflow: visible;
+  position: relative;
+  
+  color: #FFFFFF;
+  z-index: 1000;
+
+}
+
+.over span {
+  position: relative;
+  /*top: 15px;*/
 }
 
 .quote {
