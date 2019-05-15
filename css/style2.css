@@ -37,6 +37,10 @@ body {
   font-size: 22pt;
 }
 
+/*body * {
+  z-index: 2;
+}*/
+
 body.maps-page {
   padding: 0;
   margin-left: -200px;
@@ -64,10 +68,21 @@ h1 {
   margin-bottom: 20px;
 }
 
-iframe {
+/*iframe {
   z-index: -1000;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}*/
+
+iframe {
+    z-index: 1;
+    border: 0;
+    position: fixed;
+    top: -5em;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 20em);
+    filter: grayscale(1);
 }
 
 nav, .contact {
@@ -257,6 +272,9 @@ a.navlink:hover {
   animation-iteration-count: 1;
 }*/
 
+#container-all {
+  z-index: 2;
+}
 /*ROTATING CIRCLE TEXT*/
 
 #container { margin: 0%; z-index: -10;}
