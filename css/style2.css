@@ -1,11 +1,16 @@
 @font-face {
   font-family: Ogg;
-  src: url("../assets/type/Ogg-Roman.otf");
+  src: url("../assets/type/LouizeDisplayTrial-Italic.otf");
 }
 
 @font-face {
   font-family: Pixel;
   src: url("../assets/type/PixelMaster.ttf");
+}
+
+@font-face {
+  font-family: Union;
+  src: url("../assets/type/union_regular.otf");
 }
 
 /*cursor*/
@@ -31,15 +36,14 @@ a:hover {
 
 body {
 	margin: 0;
-  padding: 35px 30% 40px 5%;
-	height: 100vh;
-  font-family: Pixel;
+  font-family:  ;
   font-size: 22pt;
-}
 
-/*body * {
-  z-index: 2;
-}*/
+  background-image: url("../assets/imgs/blobbb.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: -600% -100%;
+}
 
 body.maps-page {
   padding: 0;
@@ -67,12 +71,6 @@ h1 {
   color: #FF6D70;
   margin-bottom: 20px;
 }
-
-/*iframe {
-  z-index: -1000;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}*/
 
 iframe {
     z-index: 1;
@@ -131,6 +129,12 @@ ul {
   padding: 0;
 }
 
+.body-container {
+  margin: 0;
+  padding: 50px 30% 40px 5%;
+  height: 100vh;
+}
+
 .circle {
   margin-left: 20px;
   width: 30px;
@@ -171,6 +175,13 @@ ul {
     animation:spin 4s linear infinite;
 }
 
+.blob-big {
+  max-height: 500px;
+  -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
@@ -181,6 +192,12 @@ ul {
 
 .datepic {
   color: #b1c6cc;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  /*right: 0;*/
 }
 
 .img-caption {
