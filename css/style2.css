@@ -1,6 +1,6 @@
 @font-face {
   font-family: Ogg;
-  src: url("../assets/type/LouizeDisplayTrial-Italic.otf");
+  src: url("../assets/type/Ogg-Roman.otf");
 }
 
 @font-face {
@@ -284,11 +284,6 @@ a.navlink:hover {
 .strike {
   text-decoration: line-through;
 }
-
-/*.vibrate:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: 1;
-}*/
 
 #container-all {
   z-index: 2;
