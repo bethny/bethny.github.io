@@ -188,6 +188,12 @@ a.navlink:hover {
 }
 
 /*RESPONSIVE*/
+@media (min-width: 900px) {
+  h1 {
+    font-size: 120pt;
+  }
+}
+
 @media (max-width: 800px) {
 
 /*INDEX*/
